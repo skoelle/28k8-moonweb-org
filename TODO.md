@@ -22,6 +22,11 @@ Stand: 15.08.2026 | Referenz: PLAN.md, SPEC.md, PRD.md
 - [ ] BANNER_KOSMOS — pc/kosmos-design.astro
 - [ ] BANNER_ANSI — Header auf ansi-art.astro selbst
 
+### Sonstiges
+- [x] sitemap.xml — `/bbs/cds/` Eintrag ergänzt (15.08.2026)
+- [x] `skyline-header.png` — wieder eingebaut in skyline.astro (15.08.2026)
+- [x] `global.css` — ungenutzte `.gallery-grid` + `.mod-loading` entfernt (15.08.2026)
+
 ---
 
 ## ERLEDIGT
@@ -66,7 +71,7 @@ Stand: 15.08.2026 | Referenz: PLAN.md, SPEC.md, PRD.md
 - [x] Live-Deploy funktioniert
 
 ### SEO
-- [x] sitemap.xml generiert (public/sitemap.xml)
+- [x] sitemap.xml generiert (public/sitemap.xml) — `/bbs/cds/` war vergessen, jetzt drin
 - [x] robots.txt angelegt (public/robots.txt)
 - [x] <title> und <meta description> pro Seite geprüft
 
