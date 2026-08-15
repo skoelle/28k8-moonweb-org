@@ -4,13 +4,13 @@
   --bg:#000; --fg:#c0c0c0; --fg-bright:#fff;
   --red-dark:#8b0000; --red-bright:#ff2828; --red-shadow:#4a0000; --pink:#ff69b4; --yellow:#ffd23f; --grey:#969696;
   --blue-dark:#00008b; --blue-bright:#55aaff; --blue-shadow:#000050; --cyan:#50e6e6;
-  --font-ansi:'Px437 IBM VGA 8x16','Perfect DOS VGA 437',monospace; --font-body:'IBM Plex Mono',ui-monospace,monospace; --terminal-width-ch:calc(84ch + 13px);
+  --font-ansi:'Px437 IBM VGA 8x16','Perfect DOS VGA 437',monospace; --font-body:'IBM Plex Mono',ui-monospace,monospace; --terminal-width-ch:calc(84ch + 23px);
 }
 * { box-sizing: border-box; }
 html, body { margin:0; background:var(--bg); color:var(--fg); font-family:var(--font-body); -webkit-text-size-adjust: none; }
 a { color: inherit; }
 .terminal-frame { max-width: var(--terminal-width-ch); margin:0 auto; padding:1rem; }
-.ansi-text { font-family: var(--font-ansi); white-space: pre; overflow-x: hidden; line-height: 1.05; font-size: 18px; }
+.ansi-text { font-family: var(--font-ansi); white-space: pre; overflow-x: hidden; line-height: 1.05; font-size: 20px; }
 .ansi-banner { margin: 0 0 1rem; }
 .ansi-full { margin: 0.5rem 0; overflow-x: auto; }
 .ansi-snippet { margin: 0.5rem 0; font-size: 0.8em; }
