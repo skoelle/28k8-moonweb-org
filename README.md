@@ -29,6 +29,32 @@ npm run preview   # serve the production build locally
 Cloudflare Pages, connected directly to this repo. Build command
 `npm run build`, output directory `dist`.
 
+## Pre-Build System
+
+Das Pre-Build-System lädt vor jedem Build externe Daten (JSON) und schreibt
+sie nach `src/data/`. Die JSON wird committed, sodass der Build nicht von
+externen Servern abhängt.
+
+```bash
+./prebuild.sh          # alle Stages
+./prebuild.sh mods     # nur MOD-Metadaten
+```
+
+**Wichtig:** `prebuild.sh` wird nur lokal ausgeführt, wenn sich externe Daten
+ändern. Das Ergebnis (JSON-Dateien in `src/data/`) wird ins Repo committed.
+In der CI/CD (`deploy.yml`) wird `npx astro build` direkt aufgerufen — das
+überspringt `prebuild.sh` bewusst, da die JSON-Daten bereits im Repo liegen.
+
+Aktive Stages:
+| Stage | Script | Output | Beschreibung |
+|---|---|---|---|
+| `mods` | `tools/fetch_mods.py` | `src/data/mods.json` | MOD-Metadaten von moonweb.org |
+
+Neuen Stage hinzufügen:
+1. `tools/fetch_<name>.py` erstellen (Output: `src/data/<name>.json`)
+2. Case-Block in `prebuild.sh` ergänzen
+3. `npm run build` ruft automatisch `prebuild.sh` auf
+
 ## WelcomeBanner (Startseite)
 
 Das "THE TEMPLE BBS"-Logo auf der Startseite wird als CP437-Text mit

@@ -138,6 +138,11 @@ npm run preview    # → lokaler Production-Server
 
 `prebuild.sh` lädt vor jedem Build externe Daten (JSON) und schreibt sie nach `src/data/`. Die JSON wird committed, der Build hängt nicht vom externen Server ab.
 
+**Wichtig:** `prebuild.sh` wird nur lokal ausgeführt, wenn sich externe Daten
+ändern. Das Ergebnis (JSON-Dateien in `src/data/`) wird ins Repo committed.
+In der CI/CD (`deploy.yml`) wird `npx astro build` direkt aufgerufen — das
+überspringt `prebuild.sh` bewusst, da die JSON-Daten bereits im Repo liegen.
+
 ```bash
 ./prebuild.sh          # alle Stages
 ./prebuild.sh mods     # nur MOD-Metadaten

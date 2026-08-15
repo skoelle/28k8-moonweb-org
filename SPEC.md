@@ -1,37 +1,56 @@
-# SPEC.md - 28k8.moonweb.org Technical Specification (v2)
+# SPEC.md - 28k8.moonweb.org Technical Specification
 
-## v2 changes (bug fixes + requested improvements)
-1. Fixed: ANSI banner not visible - v1 only showed a placeholder <pre> comment.
-   Now rendered via src/components/AnsiArt.astro + src/lib/ansiArt.ts (precomputed
-   colored HTML via set:html, zero JS required).
-2. Fixed: Disconnect not working - v1's mouse link never cleared localStorage,
-   so '/' bounced straight back to '/bbs/'. Fixed in src/components/NavBar.astro
-   via a plain onclick attribute that clears state before navigating.
-3. More content: Tropic DREAMs (4 real releases), SkyLINE (+3), Kosmos Design
-   (7, new collection), ESPRIT (4, new collection), MOD Files tracklist, BBS
-   ANSI Art gallery (8 filler patterns), PHOB!A/Tr@nceMISSION teaser text.
-4. More period ASCII art + gradients: 10 full boxed banners (5x7 bitmap font)
-   each with a dithering gradient bar, plus 9 net-list boxes transcribed
-   verbatim from the original reference screenshots (Fidonet/Nodelist page).
-5. SkyLINE blue accent strengthened (headings/tiles/diz-box/nav-bar) + a real
-   generated header PNG (public/images/skyline-header.png).
+## Architecture
+- **Framework:** Astro 4.15+ mit React-Islands
+- **Rendering:** Vollständig statisch (SSG), jede Route zur Build-Zeit vorgerendert
+- **Hosting:** Cloudflare Pages
+- **DNS:** Cloudflare
 
-## Repository layout delta
-src/lib/ansiArt.ts, src/components/AnsiArt.astro, src/components/NavBar.astro,
-tools/generate_ansi.py, public/images/skyline-header.png, public/favicon.ico,
-public/og-image.png, src/content/kosmos-design/*.md, src/content/esprit/*.md
+## Repository Layout
+```
+src/
+├── pages/              # Astro-Routing (eine Datei = eine URL)
+├── components/         # Astro-Components + React-Islands
+├── content/            # Markdown+Frontmatter für Releases
+├── data/               # Pre-Build JSON (mods.json)
+├── lib/                # ansiArt.ts, keymap.ts, sound.ts
+└── styles/             # global.css
+public/
+├── audio/              # Modem-Intro Sounds
+├── js/                 # chiptune3.js + WASM Worker
+├── fonts/              # CP437 Webfont
+└── images/             # skyline-header.png, og-image.png
+tools/                  # Pre-Build Scripts (Python)
+```
 
-## AnsiArt contract
-BANNER_<NAME> / ANSI_GALLERY / BOX_<NAME> exports, HTML with CSS classes
-c-border-red, c-main-red, c-shadow-red, c-border-blue, c-main-blue,
-c-shadow-blue, c-white, c-grey, c-pink, c-cyan (all in global.css).
-Render via <AnsiArt html={BANNER_X} />.
+## AnsiArt Contract
+- BANNER_<NAME> / ANSI_GALLERY / BOX_<NAME> als HTML-Exporte in ansiArt.ts
+- CSS-Klassen: c-border-red, c-main-red, c-shadow-red, c-border-blue, c-main-blue,
+  c-shadow-blue, c-white, c-grey, c-pink, c-cyan (alle in global.css)
+- Rendering via `<AnsiArt html={BANNER_X} />` (zero JS, set:html)
 
-## NavBar contract
-optional [B] Back (history.back()), always [Q] Disconnect
-(clears localStorage.hasConnected via onclick, then navigates to /),
-optional [I] Impressum & Privacy. Use everywhere instead of ad-hoc links.
+## NavBar Contract
+- [B] Back (history.back()), [Q] Disconnect (clears localStorage.hasConnected),
+  [I] Legal Notice. Überall statt ad-hoc Links verwenden.
 
-## Everything else
-Routing table, design tokens, local dev workflow (npm run dev/build/preview),
-deployment (Cloudflare Pages) - unchanged from v1. See PRD.md and PLAN.md.
+## Pre-Build System
+- `prebuild.sh` wird nur lokal ausgeführt, wenn sich externe Daten ändern
+- Ergebnis (JSON in src/data/) wird ins Repo committed
+- CI/CD (`deploy.yml`) ruft `npx astro build` direkt auf (überspringt prebuild.sh bewusst)
+
+## Design Tokens
+- DOS 16-Farben-Palette, Hintergrund Schwarz
+- CP437-Font für ANSI-Art, IBM Plex Mono für Fließtext
+- Fix 80 Zeichen breit, vertikal scrollbar
+- SkyLINE: einzige Seite mit Blau-Akzent (sonst immer Rot)
+
+## Routing
+| URL | Seite |
+|---|---|
+| `/` | Modem-Intro (→ /bbs/ wenn localStorage.hasConnected) |
+| `/bbs/` | Hauptmenü (2×2-Kachel-Raster) |
+| `/bbs/pc/*` | PHOB!A, Tr@nceMISSION, SkyLINE, Kosmos Design |
+| `/bbs/atari/*` | Tropic DREAMs |
+| `/bbs/amiga/*` | ESPRIT, MOD Files |
+| `/bbs/fido/*` | BBS ANSI Art, Fidonets & Nodelists |
+| `/bbs/legal-notice` | Legal Notice |
