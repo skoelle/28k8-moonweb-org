@@ -18,6 +18,16 @@ Stand: 15.08.2026 | Referenz: PLAN.md, SPEC.md, PRD.md
 - [ ] BANNER_KOSMOS — pc/kosmos-design.astro
 - [ ] BANNER_ANSI — Header auf ansi-art.astro selbst
 
+### Dependency Updates (Renovate)
+- [x] chiptune3 → 0.8.8 (15.08.2026)
+- [x] actions/checkout → v7 (15.08.2026)
+- [x] actions/setup-node → v7 (15.08.2026)
+- [ ] React → v19 (erst prüfen ob `@astrojs/react` kompatibel ist)
+- [ ] Astro monorepo → v5 (Major, ausführlich testen)
+- [ ] Node.js → v24 (Major, nach lokalem Test)
+- [ ] TypeScript → v7 (Major, nach `npm run build` Test)
+- [ ] GitHub Artifact Actions → Major (CI manuell prüfen)
+
 ### Sonstiges
 - [x] sitemap.xml — `/bbs/fido/cds/` Eintrag korrigiert (15.08.2026)
 - [x] `skyline-header.png` — wieder eingebaut in skyline.astro (15.08.2026)
