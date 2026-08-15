@@ -11,12 +11,16 @@ Stand: 15.08.2026 | Referenz: PLAN.md, SPEC.md, PRD.md
   (`"exact wording pending, PRD.md 12"`)
 
 ### ANSI-Art in Menüs
-- [ ] Echte .ans Dateien aus den 90ern besorgen
-- [ ] In source-assets/ansi/ ablegen
-- [ ] generate_ansi.py anpassen oder neuen Parser schreiben
-- [ ] In ansiArt.ts einbinden (Fallback auf generierte Patterns)
-- [ ] 8 Filler-Patterns durch echte gescannte/analysierte .ans ersetzen
-- [ ] BBS ANSI Art Seite aktualisieren
+- [x] BANNER_SKYLINE_SECTION — skyline.astro (blau)
+- [x] ANSI Gallery — BANNER_SKYLINE, BANNER_TEMPLE3, BANNER_INFOFILE, BANNER_MAINBASE, BANNER_LOGGED (in ansi-art.astro)
+- [ ] BANNER_TEMPLE — Hauptmenü (bbs/index.astro) + cds.astro
+- [ ] BANNER_AMIGA — amiga/mods.astro
+- [ ] BANNER_ESPRIT — amiga/esprit.astro
+- [ ] BANNER_ATARI — atari/tropic-dreams.astro
+- [ ] BANNER_TRANCE — pc/trancemission.astro
+- [ ] BANNER_PHOBIA — pc/phobia.astro
+- [ ] BANNER_KOSMOS — pc/kosmos-design.astro
+- [ ] BANNER_ANSI — Header auf ansi-art.astro selbst
 
 ---
 
