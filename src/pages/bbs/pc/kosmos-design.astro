@@ -72,7 +72,10 @@ const tools = remaining.filter((r) => r.data.platform === 'DOS');
           <p>Credits: {release.data.credits.map((c) => `${c.role} - ${c.name}`).join(' | ')}</p>
           {release.data.download_url && <p><a href={release.data.download_url}>Download</a></p>}
         </div>
-        <pre class="diz-box">{release.data.file_id_diz}</pre>
+        {release.data.screenshot
+          ? <img src={release.data.screenshot} alt={release.data.title} class="diz-box" style="width:100%; max-width:300px; height:auto;" />
+          : <pre class="diz-box">{release.data.file_id_diz}</pre>
+        }
       </div>
     ))}
     <NavBar />
