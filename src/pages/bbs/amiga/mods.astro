@@ -1,0 +1,23 @@
+---
+import TerminalLayout from '../../../layouts/TerminalLayout.astro';
+import TerminalShell from '../../../components/TerminalShell';
+import StatusBar from '../../../components/StatusBar.astro';
+import NavBar from '../../../components/NavBar.astro';
+import AnsiArt from '../../../components/AnsiArt.astro';
+import { BANNER_AMIGA } from '../../../lib/ansiArt';
+import LetterFooter from '../../../components/LetterFooter.astro';
+import ModPlayer from '../../../components/ModPlayer';
+import mods from '../../../data/mods.json';
+---
+<TerminalLayout title="MOD Files" description="Amiga module music collection">
+  <TerminalShell client:load>
+    <AnsiArt html={BANNER_AMIGA} />
+    <NavBar />
+    <h1>MOD Files</h1>
+    <p>My personal MOD file collection — all tracks composed by me on the Amiga. Click ▶ to play in-browser (WASM, libopenmpt).</p>
+    <ModPlayer client:load mods={mods} />
+    <NavBar />
+    <LetterFooter />
+    <StatusBar />
+  </TerminalShell>
+</TerminalLayout>

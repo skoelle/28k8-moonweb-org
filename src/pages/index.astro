@@ -1,0 +1,16 @@
+---
+import TerminalLayout from '../layouts/TerminalLayout.astro';
+import ModemIntro from '../components/ModemIntro';
+import WelcomeBanner from '../components/WelcomeBanner.astro';
+const now = new Date();
+const dateStr = `${String(now.getDate()).padStart(2, '0')}.${String(now.getMonth() + 1).padStart(2, '0')}.1994`;
+---
+<TerminalLayout title="Connect" description="tHE tEMPLE bBS - dial in">
+  <WelcomeBanner />
+  <p class="subtitle">Travel back to the '90s</p>
+  <ModemIntro client:load />
+  <div class="status-bar" style="margin-top: 15rem; display: flex; justify-content: space-between;"><span>Status: not connected</span><span>{dateStr}</span></div>
+  <script>
+    if (localStorage.getItem('hasConnected') === 'true') { window.location.href = '/bbs/'; }
+  </script>
+</TerminalLayout>

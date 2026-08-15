@@ -1,0 +1,33 @@
+---
+import TerminalLayout from '../../../layouts/TerminalLayout.astro';
+import TerminalShell from '../../../components/TerminalShell';
+import StatusBar from '../../../components/StatusBar.astro';
+import NavBar from '../../../components/NavBar.astro';
+import AnsiArt from '../../../components/AnsiArt.astro';
+import { BANNER_PHOBIA } from '../../../lib/ansiArt';
+import LetterFooter from '../../../components/LetterFooter.astro';
+---
+<TerminalLayout title="PHOB!A" description="PHOB!A DemoGroup Archive">
+  <TerminalShell client:load>
+    <AnsiArt html={BANNER_PHOBIA} />
+    <NavBar />
+    <img src="/images/phobia-header.png" alt="PHOB!A" style="width:100%; max-width: 640px; display:block; margin: 0 auto 1rem;" />
+    <h1>PHOB!A</h1>
+    <div class="release-row">
+      <div>
+        <p>PHOB!A was a short-lived but memorable PC DemoGroup in 1994. The highlight was the Phobia Welcome Intro — coded in Turbo Pascal with inline assembler on a 486 DX50, using palette tricks for animation and a custom font compiled into the executable.</p>
+        <p>Source code is available on GitHub.</p>
+      </div>
+      <pre class="diz-box">{`PHOB!A DemoGroup
+------------------
+PC Intros - 1994
+Turbo Pascal + ASM
+486 DX50
+X-LIB TextGraf`}</pre>
+    </div>
+    <p><a href="https://www.moonweb.org/phobia/">-&gt; Visit the full PHOB!A archive with screenshots &amp; videos</a></p>
+    <NavBar />
+    <LetterFooter />
+    <StatusBar />
+  </TerminalShell>
+</TerminalLayout>

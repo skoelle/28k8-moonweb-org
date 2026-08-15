@@ -1,0 +1,548 @@
+
+                             █         ░█   ███       ██  █▓       █
+                 █▒           █       █  █   █░█    ▒█  ░█   ███████
+    ██░     ░ ░█  ░█          █        ░█    ██░█   █   █
+   ░█    █▒  █▒  ████▓        █         ░░   ██ ██ █░  ▒█▓█████░
+    ░█    █░ ▒▒       █▒      █          █   █░  █ █   █
+       ░█▓ ███░██░           ██          █   █   ░██   █
+          █ ▒█░   █          █           ▓█  █    ██  █▓
+          ██  ▒█            █░██████████  █ █░    ██  █▒████░░░▒███
+         ░█                                       ██  █
+                                                                   ██░
+    The iNFOFilE                ▒█████▒    █                  ███▒
+    ^^^ ^^^^^^^^         ████▓          ██              ███░
+                    ████░             ▒█░          ░███░
+               ███░                  █░     ░████▒
+                                     ▒███░              Version: June '95
+
+
+
+ Hello everybody out there... This is the SkyLINE iNFOFiLE with a new dezign
+
+As you will already know, SkyLINE is a DemoGroup in AuxBurg. In this Textfile
+                   we want to tell you all about this Crew.
+
+
+ ···········································································
+
+
+-> The Topics this time...
+   ^^^^^^^^^^^^^^^^^^^^^^^
+
+   * Memberstaff
+   * Spreaded Products
+   * Distro-Sites
+   * The Order-Form
+   * How to contact sAM/SkyLINE
+   * Some information
+
+
+ ···········································································
+
+
+-> Memberstaff
+   ^^^^^^^^^^^
+
+╒═══════════════════════════════════════════════════════════════════════════╕
+│ SkyLINE Members:                                                          │
+├─════════════════──────────────┬──────────┬────────────────────────────────┤
+│ sAM       (Stefan Kölle)      │ 18 years │ Organizing, Code, Music, ANSI, │
+│                               │          │ Some GFX (and soon SYSOP?)     │
+│ M.H.      (Matthias Hebeisen) │ 18 years │ RayTracing, GFX, Some Coding   │
+╞═══════════════════════════════╧══════════╧════════════════════════════════╡
+│                                                                           │
+│ Cooperations with:                                                        │
+├─══════════════════────────────┬──────────┬────────────────────────────────┤
+│ Milk Run  (Jürgen Vejmelka)   │ 19 years │ Coding, Some Graphics          │
+│ Mirko     (Mirko Klinski)     │ 17 years │ Graphics                       │
+│ and other (name ???)          │ ?? years │ Graphics                       │
+╞═══════════════════════════════╧══════════╧════════════════════════════════╡
+│                                                                           │
+│ New Members:                                                              │
+├─════════════──────────────────────────────────────────────────────────────┤
+│ This could be you - Call us today, if you think you are good enough       │
+╘═══════════════════════════════════════════════════════════════════════════╛
+
+
+ ···········································································
+
+
+-> Spreaded Products
+   ^^^^^^^^^^^^^^^^^
+
+  Productname: Arj Utility V1.0
+  Filename   : ARJUTIL.ZIP
+  Filesize   : 8 KBytes
+  StartDate  : summer 1993
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │      ArjUtil V1.0      │
+               │ ---------------------- │
+               │ You enter the sub-dir  │
+               │ and the dest.drive and │
+               │ my prog does the rest. │
+               │    This is Freeware    │
+               └────────────────────────┘
+
+  Productname: Shell V0.65ß Preview
+  Filename   : SHELL.ZIP
+  Filesize   : 21 KBytes
+  StartDate  : summer 1993
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │   X-OS  Shell V0.65ß   │
+               │ ---------------------- │
+               │ This is a NC-Clone.    │
+               │ Made with the well     │
+               │ known SkyLINE-Bench    │
+               │ Workarea. Little       │
+               │ Preview sith some bugs │
+               │ and only some commands.│
+               │                        │
+               │ I'm still working on   │
+               │ this product, but      │
+               │ there must some bigger │
+               │ products finished      │
+               │ first before this.     │
+               │ Notice this is only a  │
+               │ Preview nor a cripple  │
+               │ ShareWare.             │
+               └────────────────────────┘
+
+  Productname: DiskInfo V1.0
+  Filename   : DISKINFO.ZIP
+  Filesize   : 10 KBytes
+  StartDate  : fall 1993
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │     DiskInfo  V1.0     │
+               │ ---------------------- │
+               │ It shows you how much  │
+               │ diskspace on up to 8   │
+               │ drives is free.        │
+               │    This is Freeware    │
+               └────────────────────────┘
+
+  Productname: Play MOD V0.2ß
+  Filename   : PLAYMOD.ZIP
+  Filesize   : 15 KBytes
+  StartDate  : winter 1993
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │     Play MOD V0.2ß     │
+               │ ---------------------- │
+               │ A little MOD-Player.   │
+               │ Uses WOW-TPU. Sorry    │
+               │ docs and programm in   │
+               │ german. Notice: This   │
+               │ version has some bugs. │
+               │ WOW-TPU has the bugs!! │
+               │    This is Freeware    │
+               └────────────────────────┘
+
+  Productname: Tetris Competition V1.0
+  Filename   : TET_COMP.ZIP
+  Filesize   : 55 KBytes
+  StartDate  : spring 1994
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │ TetrisCompetition V1.0 │
+               │ ---------------------- │
+               │ A Tetris game for 2    │
+               │ players with the rules │
+               │ like GameBoy Tetris.   │
+               │   This is a Preview    │
+               └────────────────────────┘
+
+  Productname: SpeakTime V1.0
+  Filename   : SPEAKTIM.ZIP
+  Filesize   : 90 KBytes
+  StartDate  : summer 1994
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │     Speaktime V1.0     │
+               │ ---------------------- │
+               │ Have you ever heard    │
+               │ your PC speaking the   │
+               │ time. Here it is.      │
+               │ Notice: German version │
+               │    This is Freeware    │
+               └────────────────────────┘
+
+  Productname: MOD Disk Number One
+  Filename   : MODDISK1.ZIP
+  Filesize   : 410 KBytes
+  StartDate  : 24.08.1994
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │      MusicDisk #1      │
+               │ ---------------------- │
+               │ Some nice but not so   │
+               │ good MODs from Stern.  │
+               │ This includes MDP by   │
+               │ the Future Crew.       │
+               │    This is Freeware    │
+               └────────────────────────┘
+
+  Productname: DosMENU(TM) V2.0
+  Filename   : !DM_V2_0
+  Filesize   : 181 KBytes
+  StartDate  : summer 1993
+  ReleaseDate: 26.09.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │                        │
+               │    DosMENU(TM) V2.0    │
+               │ ---------------------- │
+               │ This program selects   │
+               │ a System-Configuartion │
+               │ while booting. Helpful │
+               │ for all with more than │
+               │ one Configuration.     │
+               │                        │
+               │ This is the finished   │
+               │ and published version. │
+               │                        │
+               │ SkyLINE ShareWare 1994 │
+               │                        │
+               └────────────────────────┘
+
+  Productname: The Uncle SAM welcome demo
+  Filename   : SLN_DEMO
+  Filesize   : 181 KBytes
+  StartDate  : September 1994
+  ReleaseDate: 27.10.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │ Uncle SAM welcome Demo │
+               │ ---------------------- │
+               │ A little Demo by the   │
+               │ SkyLINE-Crew.          │
+               └────────────────────────┘
+
+  Productname: Preview Compilation #1
+  Filename   : PREVIEW1
+  Filesize   : 410 KBytes
+  StartDate  : 07.03.1995
+  ReleaseDate: 07.03.1995 / 1 hour later :-)
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │ Preview Compilation #1 │
+               │ ---------------------- │
+               │ Here are some pics     │
+               │ from us mixed up with  │
+               │ some text and music.   │
+               └────────────────────────┘
+
+  Productname: CD-ROM TSR Dooropener
+  Filename   : CD_OPEN
+  Filesize   : 11 KBytes
+  StartDate  : 03.02.1995
+  ReleaseDate: 07.03.1995
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │  CDROM TSR Dooropener  │
+               │ ---------------------- │
+               │ Opens the CD-ROM door  │
+               │ with the F12 key.      │
+               │ SkyLINE ShareWare 1995 │
+               └────────────────────────┘
+
+  Productname: Infromation Package & Little Intro
+  Filename   : INFOPACK
+  Filesize   : 74 KBytes
+  StartDate  : 12.02.1995 (Intro started a year ago)
+  ReleaseDate: 12.03.1995
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │    SkyLINE InfoPack    │
+               │ ────────────────────── │
+               │ Newest Infos, little   │
+               │ Intros and other.      │
+               │                        │
+               │ SkyLINE ShareWare 1995 │
+               └────────────────────────┘
+
+  Productname: SpeakTime V2.0 (New Version)
+  Filename   : STIME_V2
+  Filesize   : 107 KBytes
+  StartDate  : 24.08.1994 (first version)
+  ReleaseDate: 22.03.1995
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │     Speaktime V2.0     │
+               │ ────────────────────── │
+               │ Hear your Computer     │
+               │ speaking the time. Now │
+               │ also on SoundBlaster.  │
+               │                        │
+               │ SkyLINE ShareWare 1995 │
+               └────────────────────────┘
+
+  Productname: SkyLINE Searching Member Intro (Bugfixed Version)
+  Filename   : SLN_SMI
+  Filesize   : 17 KBytes
+  StartDate  : 12.03.1995 (first version)
+  ReleaseDate: 09.04.1995
+  Description: SkyLINE Searching Member Intro
+               +----------------------------+
+               |   Final Bugfixed Version   |
+               +----------------------------+
+               We' re still searching for new
+               Members. So d/l and call today
+
+  Productname: VGA Textmode 3 Copper Intro
+  Filename   : COPERINT
+  Filesize   : 16 KBytes
+  StartDate  : 30.03.1995
+  ReleaseDate: 09.04.1995
+  Description: -----------------------------------
+               ==== UncleSAM/SkyLINE presents ====
+               ≡≡≡≡ COPPER intro ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+               ==== Real Textmode 3 intro ========
+               -----------------------------------
+                 Amazing 3 Coppers on the screen
+                    SmoothScroller on the top
+                        Up/Dn Fading text
+                  & all in the normal VGAMode 3
+
+                 (C) 04/1995 by UncleSAM/SkyLINE
+
+  Productname: The Highland BBS Addy
+  Filename   : THL_ADDY
+  Filesize   : 19 KBytes
+  StartDate  : 18.04.1995
+  ReleaseDate: 29.04.1995
+  Description:        ▄▄▄▄▄▄▄▄  ▄▄   ▄▄  ▄▄
+                     ▐▓▓▓▓▓▓▓▓▌▐▓▓▌ ▐▓▓▌▐▓▓▌
+                     ▐ ■█▓▓█▀■ ▐▓▓█■▐▓▓▌▐▓▓▌
+              ▓▓▓▓▓     ▐▓▓▌   ▐▓▓▓▓▓▓▓▌▐▓▓▌■     ▓▓▓▓▓
+                        ▐▓▓▌   ▐▓▓▌ ▐▓▓▌▐▓▓█▄▄▄
+                        ▐▓▓▌   ▐▓▓▌ ▐▓▓▌▐▓▓▓▓▓▓▌
+                        ▐▀■▌   ▐▀■▌ ▐▀■▌▐▀■ ▀▀▌
+                         tHE Highland BBS Addy
+                   Esspecially made for KlAUS GRUBER
+
+
+ ···········································································
+
+
+-> Distro-Sites
+   ^^^^^^^^^^^^
+
+╒═══════════════════════════════════════════════════════════════════════════╕
+│ Request-Distro (for Requests call this Board)                             │
+├─══════════════───┬────────────────┬─────────────────────┬─────────────────┤
+│ Sirius-BBS       │ +49-8233-30860 │ 4 ZYX 19K2 modems   │ 2:2480/96       │
+│ 2:2480/96        │ +49-8233-32167 │ 4 v34 / vFC modems  │ 2:2480/196      │
+│ Christian        │ +49-8233-70020 │ ISDNA, ISDNB, ISDNC │ 2:2480/195      │
+│ Niessner         └────────────────┴─────────────────────┴─────────────────┤
+│                     Group: Programmer's Support - Area: SkyLINE Support   │
+╞═══════════════════════════════════════════════════════════════════════════╡
+│ Local-Distro (from Augsburg call this Board)                              │
+├─════════════─────┬────────────────┬───────────────────────────────────────┤
+│ Shark-BOX        │ +49-8231-88192 │ v32bis modem                          │
+│ 2:2480/403.20    └────────────────┴───────────────────────────────────────┤
+│ Bernhard Lindner     Group: #24 SkyLine - Area: #75 SkyLINE Productions   │
+│                                                                           │
+│ Online from Saturday 10 o'clock to Sunday 20 o'clock                      │
+│ Use Command "2" for special SkyLINE Menu                                  │
+╞═══════════════════════════════════════════════════════════════════════════╡
+│ Product-Site (not all Files from SkyLINE)                                 │
+├─════════════─────┬────────────────┬───────────────────────────────────────┤
+│ Airport          │ +49-821-563350 │ v32bis modem                          │
+│ 2:2480/404       │ +49-821-563893 │ vFC modem                             │
+│ Bernd Liedke     └────────────────┴───────────────────────────────────────┤
+│                          Konferenz / Area: #290 Skyline Software          │
+╞═══════════════════════════════════════════════════════════════════════════╡
+│ Product-Site (not all Files from SkyLINE)                                 │
+├─════════════─────┬────────────────┬───────────────────────────────────────┤
+│ The Highland BBS │ +49-821- 98959 │ 2 vFC v34 v32T modems                 │
+│                  │ +49-821- 93095 │ vFC v34 modem or ISDN                 │
+│                  │ +49-821- 98498 │ v32b Zyx16.8/19.2 modem or ISDN       │
+╘══════════════════╧════════════════╧═══════════════════════════════════════╛
+
+
+ ···········································································
+
+
+-> The Order-Form
+   ^^^^^^^^^^^^^^
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Cut here ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+       Mailed to: Stefan Kölle             Hotline at: +49-821-416484
+                  Laugingerstr. 10
+                  86154 Augsburg
+                  Germany
+
+
+
+        Name   : ··················································
+
+
+        Company: ··················································
+
+
+        Street : ··················································
+
+
+        City   : ··················································
+
+
+        Country: ··················································
+
+
+        Phone  : ······················ FAX: ······················
+
+
+
+
+        Check the following boxes with X if you want the product:
+
+
+        [ ] DosMENU(TM) V2.0 Registration Disk (1.44)        30,- DM
+            (Newest Info/Boot Choice util/and more)
+
+        [ ] SkyLINE-Production Disk 1 (1.44)                 10,- DM
+            (!DM_V2_0/ARJUTIL/CD_OPEN/DISKINFO/
+             MODDISK1/PLAYMOD/PREVIEW1/SHELL/
+             SLN_DEMO/SPEAKTIM/TET_COMP)
+
+        [ ] SkyLINE-Production Disk 2 (1.44)                 10,- DM
+            (INFOPACK/STIME_V2/SLN_SMI/COPERINT)
+                                                            =========
+            Please count the money and write here >>>
+
+
+
+      Please enclose the money in an envelope and I send you the
+      disk(s) as soon as possible.
+
+
+
+
+
+    I accept the above: ··················································
+                                ( Place your signature here )
+
+
+           Thanks for your Order. Uncle SAM of SkyLINE/18-Apr-95
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Cut here ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+ ···········································································
+
+
+-> How to contact sAM/SkyLINE
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+FIDO Netmail to Stefan Koelle@2:2480/96.23
+
+Local Echo at SKYLINE_SUPPORT.GER (Sirius BBS)
+
+Local Message at Airport to Stefan Koelle - +49-821-563350 v32bis modem
+                                            +49-821-563893 vFastClass modem
+
+Voicetalk at +49-821-416484 (answeringmachine)
+
+Snailmail to Stefan Koelle - Laugingerstr. 10 - 86154 Augsburg - Germany
+
+
+ ···········································································
+
+
+-> Some information
+   ^^^^^^^^^^^^^^^^
+
+Augsburg first DemoBoard
+------------------------
+If someone wants to log into the SkyLINE BBS then you have to call me first
+by voice :-(
+
+I'm no real sysop and if you want the newest stuff from SkyLINE then
+call our Support-Sites, but if you really want to call me, no problem.
+Also I must say that my BBS is not very comfortably :-(
+
+So, I must say, my BBS is only useful for demo-groups, because I have
+very nice Demos/Intros, Demo-Sources, Music-Tracker, MOD-Files, MID-Files,
+GFX-Utils, ANSI-Utils and ofcource our own products.
+But please don't call at night, best times are weekdays from 18.00 to
+21.00. Thanx.
+
+
+Searching people
+----------------
+We are still searching for coders, graphicans or musicans...
+Don't hesitate to call me. Also Cooperation-works are welcome.
+
+
+Support BBS's
+-------------
+We are NO LONGER searching for support BBS's in the area of Augsburg,
+but other city's/states/countries are welcome. If someone is interested
+then please leave a NetMail to Stefan Koelle@2:2480/96.23
+
+
+
+Take care... *Stefan*
+
+ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+           Founder and member of √SkyLINE DemoGroup Auxburg
+ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+     Contact me: sAM/SkyLINE »              fIDOnET········2:2480/96.23
+                                            gERnET·······21:100/1010.23
+                                            rENDERrING···511:3000/96.23
+ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+
+─═[ End of the iNFOFiLE ]═─

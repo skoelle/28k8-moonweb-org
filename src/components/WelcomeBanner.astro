@@ -1,0 +1,80 @@
+---
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+
+const raw = readFileSync(join(process.cwd(), 'source-assets/welcome-utf8.txt'), 'utf-8');
+const text = raw.replace(/\r\n/g, '\n').trimEnd();
+const escaped = text
+  .replace(/&/g, '&amp;')
+  .replace(/</g, '&lt;')
+  .replace(/>/g, '&gt;');
+---
+
+<pre class="welcome-banner" id="welcome-banner" aria-hidden="true">{escaped}</pre>
+
+<script>
+  (function () {
+    const el = document.getElementById('welcome-banner');
+    if (!el) return;
+
+    const full = el.textContent || '';
+    el.textContent = '';
+
+    let i = 0;
+    const BASE = 8;
+    const FAST = 4;
+    const HARD_PAUSES: [number, number][] = [[34, 400], [98, 350]];
+
+    function tick() {
+      if (i >= full.length) {
+        el.removeAttribute('aria-hidden');
+        return;
+      }
+      const ch = full[i];
+      el.textContent += ch;
+      i++;
+
+      let delay = FAST;
+      const hp = HARD_PAUSES.find(p => p[0] === i);
+      if (hp) {
+        delay = hp[1];
+      } else if (ch === '\n') {
+        delay = BASE * 4;
+      } else {
+        delay = BASE + Math.random() * 6;
+      }
+
+      setTimeout(tick, delay);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => setTimeout(tick, 300));
+    } else {
+      setTimeout(tick, 300);
+    }
+  })();
+</script>
+
+<style>
+  .welcome-banner {
+    font-family: var(--font-ansi);
+    color: var(--red-bright);
+    text-align: left;
+    width: 500px;
+    margin: 50px auto 0.5rem;
+    line-height: 1.1;
+    font-size: clamp(0.6rem, 1.5vw, 0.85rem);
+    letter-spacing: 0;
+    white-space: pre;
+    overflow: hidden;
+    min-height: 9.5em;
+  }
+  .welcome-banner::after {
+    content: '\2588';
+    animation: blink 1s step-end infinite;
+    color: var(--red-bright);
+  }
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+</style>

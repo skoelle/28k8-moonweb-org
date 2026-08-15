@@ -1,0 +1,288 @@
+ARJUTIL.RAR   [000] ┌────────────────────────┐
+ > │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+ > │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+ > │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+ > │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+ > │                        │
+ > │      ArjUtil V1.0      │
+ > │ ---------------------- │
+ > │ You enter the sub-dir  │
+ > │ and the dest.drive and │
+ > │ my prog does the rest. │
+ > │                        │
+ > │    This is Freeware    │
+ > │                        │
+ > │ SkyLINE Production '94 │
+ > │                        │
+ > └────────────────────────┘
+CD_OPEN.RAR   [000] ┌────────────────────────┐
+ > │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+ > │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+ > │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+ > │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+ > │                        │
+ > │  CDROM TSR Dooropener  │
+ > │ ---------------------- │
+ > │ Opens the CD-ROM door  │
+ > │ with the F12 key.      │
+ > │                        │
+ > │ SkyLINE ShareWare 1995 │
+ > │                        │
+ > └────────────────────────┘
+COPERINT.RAR  [000] -----------------------------------
+ > ==== UncleSAM/SkyLINE presents ====
+ > ≡≡≡≡ COPPER intro ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+ > ==== Real Textmode 3 intro ========
+ > -----------------------------------
+ >   Amazing 3 Coppers on the screen
+ >      SmoothScroller on the top
+ >          Up/Dn Fading text
+ >    & all in the normal VGAMode 3
+ > 
+ >   (C) 04/1995 by UncleSAM/SkyLINE
+DCPP.RAR      [000] SkyLINE proudly presents
+ >  ▓▀▀▓   ▓▀▀  ▓▀▀▓  ▓▀▀▓
+ >  ▒   ▒  ▒    ▒▀▀▀  ▒▀▀▀
+ >  ░▄▄░   ░▄▄  ░     ░
+ >  DemoCoderz Pascal Pack
+ > ------------------------
+ > Here it is, the ultimate
+ >   source codes for all
+ >  pascal demo beginners!
+ > Learn from existing srcs
+ >  and make your own demo
+ > ------------------------
+ > 3d/Plasmas/Coppers/Sound
+ > Xmode/Bobs/and even more
+DISKINFO.RAR  [000] ┌────────────────────────┐
+ > │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+ > │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+ > │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+ > │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+ > │                        │
+ > │     DiskInfo  V1.0     │
+ > │ ---------------------- │
+ > │ It shows you how much  │
+ > │ diskspace on up to 8   │
+ > │ drives is free.        │
+ > │                        │
+ > │    This is Freeware    │
+ > │                        │
+ > │ SkyLINE Production '94 │
+ > │                        │
+ > └────────────────────────┘
+INFOPACK.RAR  [000] ┌────────────────────────┐
+ > │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+ > │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+ > │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+ > │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+ > │    SkyLINE InfoPack    │
+ > │ ────────────────────── │
+ > │ Newest Infos, little   │
+ > │ Intros and other.      │
+ > │                        │
+ > │ SkyLINE ShareWare 1995 │
+ > └────────────────────────┘
+MODDISK1.RAR  [000] ┌────────────────────────┐
+ > │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+ > │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+ > │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+ > │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+ > │                        │
+ > │      MusicDisk #1      │
+ > │ ---------------------- │
+ > │ Some nice but not so   │
+ > │ good MODs from Stern.  │
+ > │ This includes MDP by   │
+ > │ the Future Crew.       │
+ > │                        │
+ > │    This is Freeware    │
+ > │                        │
+ > │ SkyLINE Production '94 │
+ > │                        │
+ > └────────────────────────┘
+PLAYMOD.RAR   [000] ┌────────────────────────┐
+ > │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+ > │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+ > │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+ > │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+ > │                        │
+ > │     Play MOD V0.2ß     │
+ > │ ---------------------- │
+ > │ A little MOD-Player.   │
+ > │ Uses WOW-TPU. Sorry    │
+ > │ docs and programm in   │
+ > │ german. Notice: This   │
+ > │ version has some bugs. │
+ > │ WOW-TPU has the bugs!! │
+ > │                        │
+ > │    This is Freeware    │
+ > │                        │
+ > │ SkyLINE Production '94 │
+ > │                        │
+ > └────────────────────────┘
+PREVIEW1.RAR  [000] ┌────────────────────────┐
+ > │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+ > │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+ > │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+ > │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+ > │                        │
+ > │ Preview Compilation #1 │
+ > │ ---------------------- │
+ > │ Here are some pics     │
+ > │ from us mixed up with  │
+ > │ some text and music.   │
+ > │                        │
+ > │ SkyLINE ShareWare 1995 │
+ > │                        │
+ > └────────────────────────┘
+SHARKBOX.RAR  [000] ▄▄▄▄▄ ▄   ▄ ▄▄▄▄▄ ▄▄▄▄  ▄   ▄
+ > ▄     ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄
+ > ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄  ▄▄▄▄
+ >     ▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄
+ > ▄▄▄▄▄ ▄   ▄ ▄   ▄ ▄   ▄ ▄   ▄
+ > ·∙─────── B - O - X ───────∙·
+ > 
+ > sAM/SkyLINE DemoGroup Auxburg
+ >            present
+ >      The Shark Box Intro
+ > 
+ > oNLiNE from: sAT 10 to sUN 24
+ > ·∙──── +49-8231-88912 ─────∙·
+SHELL.RAR     [000] ┌────────────────────────┐
+ > │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+ > │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+ > │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+ > │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+ > │                        │
+ > │   X-OS  Shell V0.65ß   │
+ > │ ---------------------- │
+ > │ This is a NC-Clone.    │
+ > │ Made with the well     │
+ > │ known SkyLINE-Bench    │
+ > │ Workarea. Little       │
+ > │ Preview sith some bugs │
+ > │ and only some commands.│
+ > │                        │
+ > │ I'm still working on   │
+ > │ this product, but      │
+ > │ there must some bigger │
+ > │ products finished      │
+ > │ first before this.     │
+ > │ Notice this is only a  │
+ > │ Preview nor a cripple  │
+ > │ ShareWare.             │
+ > │                        │
+ > │ SkyLINE Production '94 │
+ > │                        │
+ > └────────────────────────┘
+SLN_DEMO.RAR  [000] ┌────────────────────────┐
+ > │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+ > │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+ > │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+ > │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+ > │                        │
+ > │ Uncle SAM welcome Demo │
+ > │ ---------------------- │
+ > │ A little Demo by the   │
+ > │ SkyLINE-Crew.          │
+ > │                        │
+ > │ SkyLINE ShareWare 1994 │
+ > │                        │
+ > └────────────────────────┘
+SLN_SMI.RAR   [000] SkyLINE Searching Member Intro
+ > +----------------------------+
+ > |   Final Bugfixed Version   |
+ > +----------------------------+
+ > We' re still searching for new
+ > Members. So d/l and call today
+SLNFONTS.RAR  [000]   SkyLINE proudly presents
+ > ▓███▀█ ▓███▀█ ▓███▀▀█ ▀▀████▀▀
+ > ▒███▄  ▒███ █ ▒███  █   ███░
+ > ████   ████▄█ ████  █   ███▒
+ > 
+ >  ▓███▀█ ▓███▀█ ▓███▀█ ▓███ █
+ >  ▒███▄█ ▒███▄█ ▒███   ▒███▀▄
+ >  ████   ████ █ ████▄█ ████ █
+ > 
+ > Over 100 Fonts for TheDraw in
+ >  three Tdfont-Packs. Easy to
+ > change with included batches!
+ >     A must for all Sysop's
+SPEAKTIM.RAR  [000] ┌────────────────────────┐
+ > │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+ > │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+ > │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+ > │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+ > │                        │
+ > │     Speaktime V1.0     │
+ > │ ---------------------- │
+ > │ Have you ever heard    │
+ > │ your PC speaking the   │
+ > │ time. Here it is.      │
+ > │ Notice: German version │
+ > │                        │
+ > │    This is Freeware    │
+ > │                        │
+ > │ SkyLINE Production '94 │
+ > │                        │
+ > └────────────────────────┘
+STIME_V2.RAR  [000] ┌────────────────────────┐
+ > │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+ > │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+ > │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+ > │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+ > │     Speaktime V2.0     │
+ > │ ────────────────────── │
+ > │ Hear your Computer     │
+ > │ speaking the time. Now │
+ > │ also on SoundBlaster.  │
+ > │                        │
+ > │ SkyLINE ShareWare 1995 │
+ > └────────────────────────┘
+TET_COMP.RAR  [000] ┌────────────────────────┐
+ > │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+ > │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+ > │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+ > │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+ > │                        │
+ > │ TetrisCompetition V1.0 │
+ > │ ---------------------- │
+ > │ A Tetris game for 2    │
+ > │ players with the rules │
+ > │ like GameBoy Tetris.   │
+ > │                        │
+ > │   This is a Preview    │
+ > │                        │
+ > │ SkyLINE Production '94 │
+ > │                        │
+ > └────────────────────────┘
+THL_ADDY.RAR  [000]         ▄▄▄▄▄▄▄▄  ▄▄   ▄▄  ▄▄
+ >        ▐▓▓▓▓▓▓▓▓▌▐▓▓▌ ▐▓▓▌▐▓▓▌
+ >        ▐ ■█▓▓█▀■ ▐▓▓█■▐▓▓▌▐▓▓▌
+ > ▓▓▓▓▓     ▐▓▓▌   ▐▓▓▓▓▓▓▓▌▐▓▓▌■     ▓▓▓▓▓
+ >           ▐▓▓▌   ▐▓▓▌ ▐▓▓▌▐▓▓█▄▄▄
+ >           ▐▓▓▌   ▐▓▓▌ ▐▓▓▌▐▓▓▓▓▓▓▌
+ >           ▐▀■▌   ▐▀■▌ ▐▀■▌▐▀■ ▀▀▌
+ >            tHE Highland BBS Addy
+ >      Esspecially made for KlAUS GRUBER
+!DM_V2_0.RAR  [000] ┌────────────────────────┐
+ > │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+ > │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+ > │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+ > │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+ > │                        │
+ > │    DosMENU(TM) V2.0    │
+ > │ ---------------------- │
+ > │ This program selects   │
+ > │ a System-Configuartion │
+ > │ while booting. Helpful │
+ > │ for all with more than │
+ > │ one Configuration.     │
+ > │                        │
+ > │ This is the finished   │
+ > │ and published version. │
+ > │                        │
+ > │ SkyLINE ShareWare 1994 │
+ > │                        │
+ > └────────────────────────┘

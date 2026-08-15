@@ -1,0 +1,7 @@
+---
+export interface Props { showBack?: boolean; }
+const { showBack = true } = Astro.props;
+---
+<div class="nav-bar">
+  {showBack && <a href="#" onclick="event.preventDefault(); history.back();">[B] Back</a>}
+</div>

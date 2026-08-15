@@ -1,0 +1,34 @@
+---
+import TerminalLayout from '../../../layouts/TerminalLayout.astro';
+import TerminalShell from '../../../components/TerminalShell';
+import StatusBar from '../../../components/StatusBar.astro';
+import NavBar from '../../../components/NavBar.astro';
+import AnsiArt from '../../../components/AnsiArt.astro';
+import { BANNER_ANSI, BANNER_SKYLINE, BANNER_TEMPLE3, BANNER_INFOFILE, BANNER_MAINBASE, BANNER_LOGGED } from '../../../lib/ansiArt';
+import LetterFooter from '../../../components/LetterFooter.astro';
+
+const screens = [
+  { title: "SKYLINE VERSION", html: BANNER_SKYLINE },
+  { title: "NETLIST", html: BANNER_TEMPLE3 },
+  { title: "INFOFILE", html: BANNER_INFOFILE },
+  { title: "MAINBASE", html: BANNER_MAINBASE },
+  { title: "LOGGED", html: BANNER_LOGGED },
+];
+---
+<TerminalLayout title="BBS ANSI Art" description="Original ANSI art screens from tHE tEMPLE bBS">
+  <TerminalShell client:load>
+    <AnsiArt html={BANNER_ANSI} />
+    <NavBar />
+    <h1>BBS ANSI Art</h1>
+    <p>Original .ANS screens from tHE tEMPLE bBS (Augsburg, FidoNet 2:2480/330).</p>
+    {screens.map((screen) => (
+      <figure class="gallery-item">
+        <figcaption>{screen.title}</figcaption>
+        <AnsiArt html={screen.html} />
+      </figure>
+    ))}
+    <NavBar />
+    <LetterFooter />
+    <StatusBar />
+  </TerminalShell>
+</TerminalLayout>

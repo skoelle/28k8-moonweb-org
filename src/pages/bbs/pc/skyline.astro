@@ -1,0 +1,61 @@
+---
+import { getCollection } from 'astro:content';
+import { readFileSync } from 'node:fs';
+import TerminalLayout from '../../../layouts/TerminalLayout.astro';
+import TerminalShell from '../../../components/TerminalShell';
+import StatusBar from '../../../components/StatusBar.astro';
+import NavBar from '../../../components/NavBar.astro';
+import AnsiArt from '../../../components/AnsiArt.astro';
+import { BANNER_SKYLINE } from '../../../lib/ansiArt';
+import LetterFooter from '../../../components/LetterFooter.astro';
+import TextOverlay from '../../../components/TextOverlay.astro';
+import TextOverlayScript from '../../../components/TextOverlayScript.astro';
+const skylineFilesBbs = readFileSync('src/data/skyline-files-bbs.txt', 'utf-8');
+const skyline94 = readFileSync('src/data/skyline94.txt', 'utf-8');
+const skyline95 = readFileSync('src/data/skyline95.txt', 'utf-8');
+const releases = await getCollection('skyline');
+const tools = releases.filter((r) => !r.data.title.toLowerCase().includes('intro') && !r.data.title.toLowerCase().includes('demo') && !r.data.title.toLowerCase().includes('copper') && !r.data.title.toLowerCase().includes('shark') && !r.data.title.toLowerCase().includes('highland') && !r.data.title.toLowerCase().includes('searching'));
+const intros = releases.filter((r) => r.data.title.toLowerCase().includes('intro') || r.data.title.toLowerCase().includes('demo') || r.data.title.toLowerCase().includes('copper') || r.data.title.toLowerCase().includes('shark') || r.data.title.toLowerCase().includes('highland') || r.data.title.toLowerCase().includes('searching'));
+---
+<TerminalLayout title="SkyLINE Productions" description="SkyLINE Productions - tools, demos and utilities for the 486" accentClass="skyline-accent">
+  <TerminalShell client:load>
+    <AnsiArt html={BANNER_SKYLINE} />
+    <NavBar />
+    <h1>SkyLINE Productions</h1>
+    <p>Augsburg's first DemoGroup. Sterling (Stefan Kölle) and M.H. (Matthias Hebeisen) coding utilities, intros and games since 1993.</p>
+    <p>"We want to code real cool demos in asm."</p>
+    <p>Source files: <TextOverlay title="skyline94.txt" content={skyline94} /> <TextOverlay title="skyline95.txt" content={skyline95} /> <TextOverlay title="FILES.BBS" content={skylineFilesBbs} /></p>
+    <h2>Tools & Utilities</h2>
+    {tools.map((release) => (
+      <div class="release-row">
+        <div>
+          <h3>{release.data.title}</h3>
+          <p>{release.data.description}</p>
+          <p>Year: {release.data.year ?? '19xx'} &nbsp; Platform: {release.data.platform}</p>
+          {release.data.download_url && <p><a href={release.data.download_url}>Download</a></p>}
+        </div>
+        <pre class="diz-box">{release.data.file_id_diz}</pre>
+      </div>
+    ))}
+    <h2>Intros & Demos</h2>
+    {intros.map((release) => (
+      <div class="release-row">
+        <div>
+          <h3>{release.data.title}</h3>
+          <p>{release.data.description}</p>
+          <p>Year: {release.data.year ?? '19xx'} &nbsp; Platform: {release.data.platform}</p>
+          {release.data.download_url && <p><a href={release.data.download_url}>Download</a></p>}
+        </div>
+        <pre class="diz-box">{release.data.file_id_diz}</pre>
+      </div>
+    ))}
+    <NavBar />
+    <LetterFooter />
+    <StatusBar />
+  </TerminalShell>
+  <TextOverlayScript overlays={[
+    { id: 'overlay-skyline94-txt', title: 'skyline94.txt', content: skyline94 },
+    { id: 'overlay-skyline95-txt', title: 'skyline95.txt', content: skyline95 },
+    { id: 'overlay-files-bbs', title: 'FILES.BBS', content: skylineFilesBbs },
+  ]} />
+</TerminalLayout>

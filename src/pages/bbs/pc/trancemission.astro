@@ -1,0 +1,33 @@
+---
+import TerminalLayout from '../../../layouts/TerminalLayout.astro';
+import TerminalShell from '../../../components/TerminalShell';
+import StatusBar from '../../../components/StatusBar.astro';
+import NavBar from '../../../components/NavBar.astro';
+import AnsiArt from '../../../components/AnsiArt.astro';
+import { BANNER_TRANCE } from '../../../lib/ansiArt';
+import LetterFooter from '../../../components/LetterFooter.astro';
+---
+<TerminalLayout title="Tr@nceMISSION" description="Tr@nceMISSION Archive of Releases">
+  <TerminalShell client:load>
+    <AnsiArt html={BANNER_TRANCE} />
+    <NavBar />
+    <img src="/images/trancemission-header.png" alt="Tr@nceMISSION" style="width:100%; max-width: 640px; display:block; margin: 0 auto 1rem;" />
+    <h1>Tr@nceMISSION</h1>
+    <div class="release-row">
+      <div>
+        <p>Tr@nceMISSION was a Programming &amp; Cracking Crew active from 1992 to 1995. The group was led by Stefan Koelle and created DOS demos and intros using Turbo Pascal and assembler, pushing the hardware capabilities of the time with creative animations, sound effects, and interactive elements.</p>
+        <p>The archive features three Pascal intros — Star Intro, Logo Intro, and Menu Intro — each showcasing animated graphics, sine wave text effects, and SoundBlaster support. Source code is available on GitHub.</p>
+      </div>
+      <pre class="diz-box">{`Tr@nceMISSION
+------------------
+DOS Demos & Intros
+Turbo Pascal + ASM
+1992 - 1995
+SoundBlaster FX`}</pre>
+    </div>
+    <p><a href="https://www.moonweb.org/tcm/">-&gt; Visit the full Tr@nceMISSION archive with screenshots &amp; videos</a></p>
+    <NavBar />
+    <LetterFooter />
+    <StatusBar />
+  </TerminalShell>
+</TerminalLayout>

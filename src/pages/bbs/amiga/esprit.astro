@@ -1,0 +1,68 @@
+---
+import { getCollection } from 'astro:content';
+import TerminalLayout from '../../../layouts/TerminalLayout.astro';
+import TerminalShell from '../../../components/TerminalShell';
+import StatusBar from '../../../components/StatusBar.astro';
+import NavBar from '../../../components/NavBar.astro';
+import AnsiArt from '../../../components/AnsiArt.astro';
+import { BANNER_ESPRIT } from '../../../lib/ansiArt';
+import LetterFooter from '../../../components/LetterFooter.astro';
+const releases = await getCollection('esprit');
+---
+<TerminalLayout title="ESPRIT Releases" description="Amiga DemoMaker releases and utility discs">
+  <TerminalShell client:load>
+    <AnsiArt html={BANNER_ESPRIT} />
+    <NavBar />
+    <h1>ESPRIT Releases</h1>
+    <p>A collection of demos built on the Amiga 500.</p>
+    {releases.map((release) => (
+      <div class="release-row">
+        <div>
+          <h3>{release.data.title}</h3>
+          <p>{release.data.description}</p>
+          <p>Year: {release.data.year ?? '19xx'} &nbsp; Platform: {release.data.platform}</p>
+        </div>
+        <a class="diz-box esprit-thumb" href="#" data-img={release.data.screenshot} onclick="return false;">
+          {release.data.screenshot && <img src={release.data.screenshot} alt={release.data.title} />}
+          {!release.data.screenshot && release.data.file_id_diz}
+        </a>
+      </div>
+    ))}
+    <NavBar />
+    <LetterFooter />
+    <StatusBar />
+  </TerminalShell>
+  <div id="esprit-modal" class="modal-overlay" style="display:none;">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <img id="esprit-modal-img" src="" alt="Screenshot" />
+    </div>
+  </div>
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.getElementById('esprit-modal');
+      const modalImg = document.getElementById('esprit-modal-img');
+      document.querySelectorAll('.esprit-thumb').forEach(thumb => {
+        thumb.addEventListener('click', (e) => {
+          e.preventDefault();
+          const img = thumb.getAttribute('data-img');
+          if (!img) return;
+          modalImg.src = img;
+          modal.style.display = 'flex';
+        });
+      });
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal || e.target.classList.contains('modal-close')) {
+          modal.style.display = 'none';
+          modalImg.src = '';
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'flex') {
+          modal.style.display = 'none';
+          modalImg.src = '';
+        }
+      });
+    });
+  </script>
+</TerminalLayout>

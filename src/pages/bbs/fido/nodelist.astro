@@ -1,0 +1,35 @@
+---
+import TerminalLayout from '../../../layouts/TerminalLayout.astro';
+import TerminalShell from '../../../components/TerminalShell';
+import StatusBar from '../../../components/StatusBar.astro';
+import NavBar from '../../../components/NavBar.astro';
+import AnsiArt from '../../../components/AnsiArt.astro';
+import {
+  BANNER_FIDONET, BOX_USEFUL_INFO, BOX_SUPPORTED_NETS,
+  BOX_REGULAR_NETS, BOX_CLONE_NETS, BOX_SINGLE_TOPIC_NETS,
+  BOX_SPECIAL_NETS, BOX_CHAT_NETS, BOX_DEMO_NETS, BOX_AVAILABLE_NETS,
+} from '../../../lib/ansiArt';
+import LetterFooter from '../../../components/LetterFooter.astro';
+---
+<TerminalLayout title="Fidonets and Nodelists" description="Node 2:2480/330 history and the networks tHE tEMPLE bBS was part of">
+  <TerminalShell client:load>
+    <AnsiArt html={BANNER_FIDONET} />
+    <NavBar />
+    <h1>Fidonets and Nodelists</h1>
+    <p>tHE tEMPLE bBS was Fidonet node <strong>2:2480/330</strong> (with a point network at 2:2480/331), running as a multi-net-server with a long list of other networks, most free to join and free to use for downloads. Sysop: Stefan Koelle.</p>
+    <AnsiArt html={BOX_USEFUL_INFO} />
+    <AnsiArt html={BOX_SUPPORTED_NETS} />
+    <h2>Net Groups (as listed on the original welcome screen)</h2>
+    <AnsiArt html={BOX_REGULAR_NETS} />
+    <AnsiArt html={BOX_CLONE_NETS} />
+    <AnsiArt html={BOX_SINGLE_TOPIC_NETS} />
+    <AnsiArt html={BOX_SPECIAL_NETS} />
+    <AnsiArt html={BOX_CHAT_NETS} />
+    <AnsiArt html={BOX_DEMO_NETS} />
+    <h2>Full Available Nets List (HOST/HUB roles)</h2>
+    <AnsiArt html={BOX_AVAILABLE_NETS} />
+    <NavBar />
+    <LetterFooter />
+    <StatusBar />
+  </TerminalShell>
+</TerminalLayout>

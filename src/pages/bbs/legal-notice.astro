@@ -1,0 +1,25 @@
+---
+import TerminalLayout from '../../layouts/TerminalLayout.astro';
+import TerminalShell from '../../components/TerminalShell';
+import StatusBar from '../../components/StatusBar.astro';
+import NavBar from '../../components/NavBar.astro';
+import LetterFooter from '../../components/LetterFooter.astro';
+---
+<TerminalLayout title="Legal Notice" description="Legal notice and privacy information">
+  <TerminalShell client:load>
+    <NavBar />
+    <h1>Legal Notice</h1>
+    <p>Stefan Kölle<br />
+Neumarkter Str. 86c<br />
+81673 München, Germany<br />
+<br />
+Phone/Fax: +49-(89)-20006547<br />
+Email: 28k8@moonweb.org
+</p>
+    <p>Responsible for content according to § 18 (2) MStV: Stefan Kölle, address as above.</p>
+    <p>Full legal notice &amp; privacy policy for this website and the moonweb.org network: <a href="https://hub.moonweb.org/impressum">hub.moonweb.org/impressum</a></p>
+    <NavBar />
+    <LetterFooter />
+    <StatusBar />
+  </TerminalShell>
+</TerminalLayout>

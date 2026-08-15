@@ -1,0 +1,8 @@
+---
+const letters = ['t', 'H', 'E', ' ', 't', 'E', 'M', 'P', 'L', 'E', ' ', 'b', 'B', 'S'];
+---
+<div class="letter-footer" aria-hidden="true">
+  {letters.map((l) => l === ' ' ? <span class="letter-space">{'\u00A0'}</span> : <span>{l}</span>)}
+  <a href="/" onclick="localStorage.removeItem('hasConnected');">[Q] Disconnect</a>
+  <a href="/bbs/legal-notice">[I] Legal Notice</a>
+</div>

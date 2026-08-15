@@ -1,0 +1,86 @@
+---
+import { getCollection } from 'astro:content';
+import { readFileSync } from 'node:fs';
+import TerminalLayout from '../../../layouts/TerminalLayout.astro';
+import TerminalShell from '../../../components/TerminalShell';
+import StatusBar from '../../../components/StatusBar.astro';
+import NavBar from '../../../components/NavBar.astro';
+import AnsiArt from '../../../components/AnsiArt.astro';
+import { BANNER_KOSMOS } from '../../../lib/ansiArt';
+import LetterFooter from '../../../components/LetterFooter.astro';
+import TextOverlay from '../../../components/TextOverlay.astro';
+import TextOverlayScript from '../../../components/TextOverlayScript.astro';
+const kosmosTxt = readFileSync('src/data/kds-kosmos.txt', 'utf-8');
+const filesBbs = readFileSync('src/data/kds-files-bbs.txt', 'utf-8');
+const allReleases = await getCollection('kosmos-design');
+const outsideReleases = allReleases.filter((r) => r.data.group.includes('Outside Productions'));
+const lethalIllusion = allReleases.filter((r) => r.data.group.includes('Lethal Illusion'));
+const tapes = allReleases.filter((r) => r.data.platform === 'Audio');
+const remaining = allReleases.filter((r) => !r.data.group.includes('Outside Productions') && !r.data.group.includes('Lethal Illusion') && r.data.platform !== 'Audio');
+const tools = remaining.filter((r) => r.data.platform === 'DOS');
+---
+<TerminalLayout title="Kosmos Design [KDS]" description="Kosmos Design releases and outside productions">
+  <TerminalShell client:load>
+    <AnsiArt html={BANNER_KOSMOS} />
+    <NavBar />
+    <h1>kOSMOS-d-Sign [KDS]</h1>
+    <p>marc JiNX^kDS^SBR (Stefan Koelle) - Augsburg, May '96. After giving up as coordinator of SkyLINE ("you probably think SkyLINE was lame and it was sure!"), KDS became the outlet for personal releases that couldn't go through a demogroup. Also a member of SBR.</p>
+    <p>Closely tied to tHE tEMPLE bBS - a reference screen even carried the tag "%KDS world headquarter%". BBS: 49.821.2191038 (Modem), 49.821.2191036 (ISDN). Networks: stoned brain records, comanet, scenenet, oanet, 8bitnet.</p>
+    <p>Source files: <TextOverlay title="kosmos.txt" content={kosmosTxt} /> <TextOverlay title="FILES.BBS" content={filesBbs} /></p>
+    <h2>Tools</h2>
+    {tools.map((release) => (
+      <div class="release-row">
+        <div>
+          <h3>{release.data.title}</h3>
+          <p>{release.data.description}</p>
+          <p>Year: {release.data.year ?? '19xx'} &nbsp; Platform: {release.data.platform}</p>
+          {release.data.download_url && <p><a href={release.data.download_url}>Download</a></p>}
+        </div>
+        <pre class="diz-box">{release.data.file_id_diz}</pre>
+      </div>
+    ))}
+    <h2>DJ Mix Tapes</h2>
+    {tapes.map((release) => (
+      <div class="release-row">
+        <div>
+          <h3>{release.data.title}</h3>
+          <p>{release.data.description}</p>
+          <p>Year: {release.data.year ?? '19xx'} &nbsp; Length: 90 min</p>
+          {release.data.download_url && <p><a href={release.data.download_url}>Download</a></p>}
+        </div>
+        {release.data.file_id_diz && <pre class="diz-box">{release.data.file_id_diz}</pre>}
+      </div>
+    ))}
+    <h2>Lethal Illusion [Duke 3D]</h2>
+    {lethalIllusion.map((release) => (
+      <div class="release-row">
+        <div>
+          <h3>{release.data.title}</h3>
+          <p>{release.data.description}</p>
+          <p>Year: {release.data.year ?? '19xx'} &nbsp; Platform: {release.data.platform}</p>
+          {release.data.download_url && <p><a href={release.data.download_url}>Download</a></p>}
+        </div>
+        <pre class="diz-box">{release.data.file_id_diz}</pre>
+      </div>
+    ))}
+    <h2>Outside Productions (BBS Intros)</h2>
+    {outsideReleases.map((release) => (
+      <div class="release-row">
+        <div>
+          <h3>{release.data.title}</h3>
+          <p>{release.data.description}</p>
+          <p>Credits: {release.data.credits.map((c) => `${c.role} - ${c.name}`).join(' | ')}</p>
+          {release.data.download_url && <p><a href={release.data.download_url}>Download</a></p>}
+        </div>
+        <pre class="diz-box">{release.data.file_id_diz}</pre>
+      </div>
+    ))}
+    <NavBar />
+    <LetterFooter />
+    <StatusBar />
+  </TerminalShell>
+  <TextOverlayScript overlays={[
+    { id: 'overlay-kosmos-txt', title: 'kosmos.txt', content: kosmosTxt },
+    { id: 'overlay-files-bbs', title: 'FILES.BBS', content: filesBbs },
+  ]} />
+</TerminalLayout>

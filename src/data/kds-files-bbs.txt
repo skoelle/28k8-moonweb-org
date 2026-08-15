@@ -1,0 +1,38 @@
+K`FLR021.RAR  [000] FastEcho LogFile Reporter V0.21
+ > ▄ ──═════════════════════════════── ▄
+ > █     k 0 S M 0 S - d - S i g n     █
+ > ▀ ──═════════[ presents ]════════── ▀
+ > │                                   │
+ > ║     FastEcho LogFile Reporter     ║
+ > ║                                   ║
+ > ║ Very simple util for FastEcho to  ║
+ > ║ make a report of all incoming     ║
+ > ║ mails in a better way then the    ║
+ > ║ logfile. Tested with FE 1.45 but  ║
+ > ║ must work also with other         ║
+ > ║ versions. Notice: MAILWARE        ║
+ > │                                   │
+ > ■──══[tHE tEMPLE bBS 2:2480/330]══──■
+K`MENU01.RAR  [000]
+ >     kOSMOS d-Sign
+ >     quick release
+ >
+ >    bbs menu ansi's
+ >
+K`LI`001.RAR  [000]  ▄▄▄▄  ▄▄▄▄ ▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄
+ > ▐███▓▌ ███▓▐██████▓▄ ▐███████▓
+ > ▐████▌▄███▌▐███  ███▐███  ▀▀▀▀
+ > █████████▌ ████   ██ █████████▌
+ > █████▌▐███▌████  ███▌▄▄[mJ]██▓▌
+ > ▓████▌ ▓██▌▓██████▓▌ █▓██████▌
+ > ▀▀▀▀▀  ▀▀▀ ▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀
+ > ╖─┌───════╧════════╧╧════════╧╛
+ > ║ │ lETHAL iLLUSiON sUBDiViSION
+ > ║═╡
+ > ╚═╕ Duke Nukem 3D level
+ > ║ │ Nightmare on billerstreet
+ > ║ │
+ > ║ │ House-Level: a good new
+ > ║═╡              level for
+ > ╚═╕              single and
+ > ║ │              dukematch!

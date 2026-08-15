@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import TerminalLayout from '../../../layouts/TerminalLayout.astro';
+import TerminalShell from '../../../components/TerminalShell';
+import StatusBar from '../../../components/StatusBar.astro';
+import NavBar from '../../../components/NavBar.astro';
+import AnsiArt from '../../../components/AnsiArt.astro';
+import { BANNER_ATARI } from '../../../lib/ansiArt';
+import LetterFooter from '../../../components/LetterFooter.astro';
+const releases = (await getCollection('tropicdreams')).sort((a, b) => (a.data.year ?? 0) - (b.data.year ?? 0));
+---
+<TerminalLayout title="Tropic DREAMs" description="Atari ST games and tools, 1990-1992">
+  <TerminalShell client:load>
+    <AnsiArt html={BANNER_ATARI} />
+    <NavBar />
+    <h1>Tropic DREAMs</h1>
+    <p>Stefan's pseudonym for everything released on the Atari ST - a 1040 STFM (1MB, low-res) and later a Mega 4 (4MB, 60MB HD, hi-res 640x400). Four releases between 1990 and 1992:</p>
+    {releases.map((release) => (
+      <div class="release-row">
+        <div><h3>{release.data.title} ({release.data.year})</h3><p>{release.data.description}</p><p>Credits: {release.data.credits.map((c) => `${c.role} - ${c.name}`).join(' | ')}</p></div>
+        <a class="diz-box" href="#" id={release.slug}>
+{release.data.file_id_diz}
+        </a>
+      </div>
+    ))}
+    <NavBar />
+    <LetterFooter />
+    <StatusBar />
+  </TerminalShell>
+</TerminalLayout>

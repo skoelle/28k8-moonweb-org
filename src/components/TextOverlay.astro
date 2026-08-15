@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  content: string;
+}
+const { title, content } = Astro.props;
+const id = `overlay-${title.toLowerCase().replace(/[^a-z0-9]/gi, '-')}`;
+---
+<button class="text-overlay-btn" data-overlay={id}>
+  {title}
+</button>
+<style>
+  .text-overlay-btn {
+    background: none;
+    border: 1px solid var(--red-dark);
+    color: var(--fg);
+    font-family: var(--font-ansi);
+    padding: 0.25rem 0.6rem;
+    cursor: pointer;
+    font-size: inherit;
+    display: inline;
+  }
+  .text-overlay-btn:hover {
+    border-color: var(--red-bright);
+    color: var(--red-bright);
+  }
+</style>

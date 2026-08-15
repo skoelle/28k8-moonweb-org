@@ -1,0 +1,125 @@
+---
+interface OverlayEntry {
+  id: string;
+  title: string;
+  content: string;
+}
+interface Props {
+  overlays: OverlayEntry[];
+}
+const { overlays } = Astro.props;
+const data = JSON.stringify(overlays);
+---
+<script define:vars={{ data }}>
+  window.__textOverlays = JSON.parse(data);
+</script>
+<script>
+  function initOverlays() {
+    document.querySelectorAll('.text-overlay-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-overlay');
+        let dialog = document.getElementById(id) as HTMLDialogElement;
+        if (!dialog) {
+          const entry = window.__textOverlays.find((o) => o.id === id);
+          if (!entry) return;
+          dialog = document.createElement('dialog');
+          dialog.className = 'text-overlay';
+          dialog.id = id;
+          const titleHtml = document.createElement('span');
+          titleHtml.textContent = entry.title;
+          const contentPre = document.createElement('pre');
+          contentPre.className = 'text-overlay-content';
+          contentPre.textContent = entry.content;
+          const headerDiv = document.createElement('div');
+          headerDiv.className = 'text-overlay-header';
+          headerDiv.appendChild(titleHtml);
+          const closeBtn = document.createElement('button');
+          closeBtn.className = 'text-overlay-close';
+          closeBtn.textContent = '[X]';
+          headerDiv.appendChild(closeBtn);
+          const innerDiv = document.createElement('div');
+          innerDiv.className = 'text-overlay-inner';
+          innerDiv.appendChild(headerDiv);
+          innerDiv.appendChild(contentPre);
+          dialog.appendChild(innerDiv);
+          document.body.appendChild(dialog);
+          closeBtn.addEventListener('click', () => dialog.close());
+          dialog.addEventListener('click', (e) => {
+            if (e.target === dialog) dialog.close();
+          });
+        }
+        dialog.showModal();
+      });
+    });
+  }
+  initOverlays();
+  document.addEventListener('astro:page-load', initOverlays);
+</script>
+<style is:global>
+  .text-overlay {
+    background: #000;
+    color: #ffb000;
+    border: 2px solid var(--red-dark);
+    padding: 0;
+    max-width: 90vw;
+    height: 80vh;
+    width: 80ch;
+    overflow: hidden;
+  }
+  .text-overlay::backdrop {
+    background: rgba(0, 0, 0, 0.85);
+  }
+  .text-overlay-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .text-overlay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--red-dark);
+    font-family: var(--font-ansi);
+    color: var(--red-bright);
+    flex-shrink: 0;
+  }
+  .text-overlay-close {
+    background: none;
+    border: none;
+    color: var(--red-bright);
+    font-family: var(--font-ansi);
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+  }
+  .text-overlay-close:hover {
+    color: #fff;
+  }
+  .text-overlay-content {
+    margin: 0;
+    padding: 0.75rem;
+    font-family: var(--font-ansi);
+    font-size: 14px;
+    line-height: 1.15;
+    overflow-y: auto;
+    white-space: pre;
+    color: #ffb000;
+    flex: 1;
+    scrollbar-width: thin;
+    scrollbar-color: var(--red-dark) #000;
+  }
+  .text-overlay-content::-webkit-scrollbar {
+    width: 8px;
+  }
+  .text-overlay-content::-webkit-scrollbar-track {
+    background: #000;
+  }
+  .text-overlay-content::-webkit-scrollbar-thumb {
+    background: var(--red-dark);
+    border-radius: 0;
+  }
+  .text-overlay-content::-webkit-scrollbar-thumb:hover {
+    background: var(--red-bright);
+  }
+</style>

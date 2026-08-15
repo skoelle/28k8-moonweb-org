@@ -1,0 +1,55 @@
+---
+import TerminalLayout from '../../layouts/TerminalLayout.astro';
+import TerminalShell from '../../components/TerminalShell';
+import Tile from '../../components/Tile.astro';
+import StatusBar from '../../components/StatusBar.astro';
+import LetterFooter from '../../components/LetterFooter.astro';
+import NavBar from '../../components/NavBar.astro';
+import AnsiArt from '../../components/AnsiArt.astro';
+import { BANNER_TEMPLE } from '../../lib/ansiArt';
+---
+<TerminalLayout title="Main Menu" description="tHE tEMPLE bBS - main menu">
+  <TerminalShell client:load>
+    <AnsiArt html={BANNER_TEMPLE} />
+    <div class="tile-grid">
+      <Tile sections={[
+        {
+          title: 'PC SECTION',
+          hardware: 'Colani 486 DX-50 / DOS / VGA / SB AWE32',
+          items: [
+            { key: 'S', label: 'SkyLINE Productions', href: '/bbs/pc/skyline' },
+            { key: 'T', label: 'Tr@nceMISSION', href: '/bbs/pc/trancemission' },
+            { key: 'P', label: 'PHOB!A', href: '/bbs/pc/phobia' },
+            { key: 'K', label: 'Kosmos Design [KDS]', href: '/bbs/pc/kosmos-design' },
+          ],
+        },
+        {
+          title: 'ATARI ST SECTION',
+          hardware: '1040 STFM (1MB) / Mega 4 (4MB, 60MB HD)',
+          items: [{ key: 'D', label: 'Tropic DREAMs', href: '/bbs/atari/tropic-dreams' }],
+        },
+      ]} />
+      <Tile sections={[
+        {
+          title: 'AMIGA SECTION',
+          hardware: 'Amiga 500, 1MB, 2 Diskdrives',
+          items: [
+            { key: 'E', label: 'ESPRIT Releases', href: '/bbs/amiga/esprit' },
+            { key: 'M', label: 'MOD Files', href: '/bbs/amiga/mods' },
+          ],
+        },
+        {
+          title: 'BBS & FIDO SECTION',
+          hardware: '486dx2-66 OS/2 Warp 3 / PHOBOS Mailbox',
+          items: [
+            { key: 'A', label: 'BBS ANSI Art', href: '/bbs/fido/ansi-art' },
+            { key: 'F', label: 'Fidonets and Nodelists', href: '/bbs/fido/nodelist' },
+            { key: 'C', label: 'tHE tEMPLE bBS CDs', href: '/bbs/cds' },
+          ],
+        },
+      ]} />
+    </div>
+    <LetterFooter />
+    <StatusBar />
+  </TerminalShell>
+</TerminalLayout>

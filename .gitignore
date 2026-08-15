@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+.venv/
+/.tmp
+.env
+.env.local
+.env.production

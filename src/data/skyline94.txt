@@ -1,0 +1,299 @@
+               ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ Date:
+               ▒▒███████████████                             ▒▒ 25-Aug-94
+               ▒▒██   █ █ █ █ ██  ███    █▄  █▄  █▄  █████▄  ▒▒ 
+               ▒▒██ ███ █ █ █ ██  ███    ███ ███▄███ ███▀▀▀  ▒▒ Lines:
+               ▒▒██   █  ██ █ ██  ███    ███ ███████ █████   ▒▒ 299
+               ▒▒████ █ █ ██ ███  ███▄▄▄ ███ ███▀███ ███▄▄▄  ▒▒ 
+               ▒▒██   █ █ ██ ███   ▀████  ▀█  ▀█  ▀█  ▀████  ▒▒ File Size:
+               ▒▒███████████████                             ▒▒ 12 KBytes
+               ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+               ▒▒  SkyLINE ->  Information File  <- SkyLINE  ▒▒ Written by
+               ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ Sterling
+
+
+                                Introduction                            
+               ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
+You will probably say "What is SkyLine?". I will try to explain what we wanna
+do on the PC. SkyLine is a very young group of people who want to enter the
+world of PC. At the moment there are only two Members of SkyLine. By the way
+this is a legal group. NO illegal tradings or any other piracy stuff. At the
+moment we are only coding some nice utilities and some not so good games, but
+in the future we want to code real cool demos in asm.
+
+
+                           Topics in this document
+               ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
+                                Introduction                            
+                                   Members
+                              Finished Products
+                             Unfinished Products
+                           Some words about DOSMenu
+                             How to reach SkyLINE
+                                Final Message
+                                   The END
+
+
+                                   Members
+               ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
+  Alias    | Real Name         | Age | Activities
+ ----------+-------------------+-----+----------------------------------------
+  Sterling | Stefan Kölle      |  17 | Organizing, Code, Music, Some GFX
+  M.H.     | Matthias Hebeisen |  18 | RayTracing, GFX, Some Coding
+
+
+                             Spreaded Products
+               ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
+  Productname: Arj Utility V1.0
+  Filename   : ARJUTIL.ZIP
+  Filesize   : 8 KBytes
+  StartDate  : summer 1993
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │                        │
+               │      ArjUtil V1.0      │
+               │ ---------------------- │
+               │ You enter the sub-dir  │
+               │ and the dest.drive and │
+               │ my prog does the rest. │
+               │                        │
+               │    This is Freeware    │
+               │                        │
+               │ SkyLINE Production '94 │
+               │                        │
+               └────────────────────────┘
+
+  Productname: Shell V0.65ß Preview
+  Filename   : SHELL.ZIP
+  Filesize   : 21 KBytes
+  StartDate  : summer 1993
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │                        │
+               │   X-OS  Shell V0.65ß   │
+               │ ---------------------- │
+               │ This is a NC-Clone.    │
+               │ Made with the well     │
+               │ known SkyLINE-Bench    │
+               │ Workarea. Little       │
+               │ Preview sith some bugs │
+               │ and only some commands.│
+               │                        │
+               │ I'm still working on   │
+               │ this product, but      │
+               │ there must some bigger │
+               │ products finished      │
+               │ first before this.     │
+               │ Notice this is only a  │
+               │ Preview nor a cripple  │
+               │ ShareWare.             │
+               │                        │
+               │ SkyLINE Production '94 │
+               │                        │
+               └────────────────────────┘
+
+  Productname: DiskInfo V1.0
+  Filename   : DISKINFO.ZIP
+  Filesize   : 10 KBytes
+  StartDate  : fall 1993
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │                        │
+               │     DiskInfo  V1.0     │
+               │ ---------------------- │
+               │ It shows you how much  │
+               │ diskspace on up to 8   │
+               │ drives is free.        │
+               │                        │
+               │    This is Freeware    │
+               │                        │
+               │ SkyLINE Production '94 │
+               │                        │
+               └────────────────────────┘
+
+  Productname: Play MOD V0.2ß
+  Filename   : PLAYMOD.ZIP
+  Filesize   : 15 KBytes
+  StartDate  : winter 1993
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │                        │
+               │     Play MOD V0.2ß     │
+               │ ---------------------- │
+               │ A little MOD-Player.   │
+               │ Uses WOW-TPU. Sorry    │
+               │ docs and programm in   │
+               │ german. Notice: This   │
+               │ version has some bugs. │
+               │ WOW-TPU has the bugs!! │
+               │                        │
+               │    This is Freeware    │
+               │                        │
+               │ SkyLINE Production '94 │
+               │                        │
+               └────────────────────────┘
+
+  Productname: Tetris Competition V1.0
+  Filename   : TET_COMP.ZIP
+  Filesize   : 55 KBytes
+  StartDate  : spring 1994
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │                        │
+               │ TetrisCompetition V1.0 │
+               │ ---------------------- │
+               │ A Tetris game for 2    │
+               │ players with the rules │
+               │ like GameBoy Tetris.   │
+               │                        │
+               │   This is a Preview    │
+               │                        │
+               │ SkyLINE Production '94 │
+               │                        │
+               └────────────────────────┘
+
+  Productname: SpeakTime V1.0
+  Filename   : SPEAKTIM.ZIP
+  Filesize   : 90 KBytes
+  StartDate  : summer 1994
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │                        │
+               │     Speaktime V1.0     │
+               │ ---------------------- │
+               │ Have you ever heard    │
+               │ your PC speaking the   │
+               │ time. Here it is.      │
+               │ Notice: German version │
+               │                        │
+               │    This is Freeware    │
+               │                        │
+               │ SkyLINE Production '94 │
+               │                        │
+               └────────────────────────┘
+
+  Productname: MOD Disk Number One
+  Filename   : MODDISK1.ZIP
+  Filesize   : 410 KBytes
+  StartDate  : 24.08.1994
+  ReleaseDate: 24.08.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │                        │
+               │      MusicDisk #1      │
+               │ ---------------------- │
+               │ Some nice but not so   │
+               │ good MODs from Stern.  │
+               │ This includes MDP by   │
+               │ the Future Crew.       │
+               │                        │
+               │    This is Freeware    │
+               │                        │
+               │ SkyLINE Production '94 │
+               │                        │
+               └────────────────────────┘
+
+  Productname: DOSMenu Final V2.0
+  Filename   : !DM_V2_0
+  Filesize   : ?? KBytes
+  StartDate  : summer 1993
+  ReleaseDate: ??.??.1994
+  Description: ┌────────────────────────┐
+               │ ██▌█ █▐█ █▐█  █▌█ █▐██ │
+               │ █  █ █▐█ █▐█  █▌█▌█▐█  │
+               │ ▀█▌█▀▄ ▐█ ▐█  █▌███▐█▀ │
+               │ ██▌█ █ ▐█ ▐██▌█▌█▐█▐██ │
+               │                        │
+               │   DOSMenu Final V2.0   │
+               │ ---------------------- │
+               │ This program selects   │
+               │ a System-Configuartion │
+               │ while booting. Helpful │
+               │ for all with more than │
+               │ one Configuration.     │
+               │                        │
+               │ This is the finished   │
+               │ and published version. │
+               │                        │
+               │ SkyLINE Production '94 │
+               │                        │
+               └────────────────────────┘
+
+                    Frequently asked Questions about SkyLINE
+               ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
+Q: Why have you released all your first Products on 24.08.1994?
+A: That's because on this day I searched through all my Sub-DIRs and
+   thought it would be funny to release all my little programs as Freeware.
+
+
+                           Some words about DOSMenu
+               ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
+These are the previous versions of DOSMenu which are not fully working and
+they have some bugs. Please don't spread this versions any longer.
+
+                            DOSMenu     V0.9ß  
+                            DOSMenu II  V2.0
+                            DOSMenu III V1.0 - V1.4
+                            DOSMenu Update          
+
+             
+                             How to reach SkyLINE
+               ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
+                    Write to      : Stefan Kölle
+                                    Laugingerstr. 10
+                                    86154 Augsburg
+                                    Germany
+                    Or simply dial: +49-821-416484 (19h-20h)
+
+
+                                Final Message
+               ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
+If you want to order a program please use the ORDER.TXT. Read the information
+very good in ORDER.TXT. If somebody wants to join SkyLINE please don't wait
+and call us now. We strongly need a BBS. Please call us if you live in
+Augsburg in Germany and you want to join SkyLINE. We also need more Coder,
+Graphics-Artists and Music-Composer and finaly a vice Organizer or later the
+first Organizer is needed, I'm not a real Organizer. Signed Sterling.
+
+
+                                   The END
+               ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+                                  __    _   _     ____ 
+                           _|    |  |  | \ | \|\ |  __\
+                     /  \|_  \   |  |_ |  ||    ||  _|
+                     \/\  \       \___| \_| \|\_| \___|
+                       /                                [94-Stern]

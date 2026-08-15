@@ -1,0 +1,111 @@
+    ▄▄▄▄  ▄▄▄▄ ▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄
+   ▐███▓▌ ███▓▐██████▓▄ ▐███████▓
+   ▐████▌▄███▌▐███  ███▐███  ▀▀▀▀
+   █████████▌ ████   ██ █████████▌
+   █████▌▐███▌████  ███▌▄▄[mJ]██▓▌
+   ▓████▌ ▓██▌▓██████▓▌ █▓██████▌
+   ▀▀▀▀▀  ▀▀▀ ▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀
+
+ ■ · « ─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─- » · ■
+ ·          /----)         /----)                    /----)  /----\     [mJ]·
+ ¡       /---\___)      /---\___)                   ( ____)/-\ ___/         ¡
+ |  |-| |  !  |--\--\/--| !  |--\          |-|      ( ----\\_/ ---\-\  |-|  |
+ |  | |/-) |  |__ )|\/| | |  |__ ) ·──·  /-| | ·──·  \____ )-| __  )  \| |  |
+ !  |   <  ¡  |-- )|  | | ¡  |-- )      | <> |       (---- ) | --  )|\   |  !
+ ·  |_|\_)___/___/_|  |_|___/___/        \_|_|       (____/|_|\___/_|  \_|  ·
+ ■ · « ─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─-─- » · ■
+
+
+                                                             kOSMOS-d-Sign
+
+                                                                 iNFO fILE
+
+                                                            short and easy
+
+                                                                   May '96
+
+
+
+
+
+
+   beginning-section                                some words from my own
+   =`-`=`-`-`=-`-`=-`=`-`=`-`=-`=-`=`=`-`=-`=-`=-`=-`=-`=-`=`-`=-`=`-=`-`=
+
+   I tried to make a demogroup in augsburg quite long, but nobody was
+   interessted...
+   So I gave up my doing's as coorinator of SkyLINE, dropped all out and
+   now do my work alone...
+   You probably think SkyLINE was lame and it was sure!
+   now i learned and don't want to be the best, I only do my work and
+   that's all...
+
+   But, the SkyLINE progs are not dead! I try to improve some tool and
+   release them again...
+
+   Later I wanted to join a new demogroup in augsburg, but there is no
+   real teamwork possible, I would be the only real coder there...
+   So i decided to join SBR...
+
+   On KDS I only will release my own stuff, which could not be released
+   through a demogroup...
+
+   marc JiNX^kDS^SBR (Stefan Koelle)
+
+
+
+
+
+   tool-section                                                   releases
+   =`-`=`-`-`=-`-`=-`=`-`=`-`=-`=-`=`=`-`=-`=-`=-`=-`=-`=-`=`-`=-`=`-=`-`=
+
+   Name            Desciption
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   K`FLR021.RAR    FastEcho LogFile Reporter V0.21
+   K`MENU01.RAR    BBS Menu Files V0.1
+
+
+
+
+
+   tape-section                                                   releases
+   =`-`=`-`-`=-`-`=-`=`-`=`-`=-`=-`=`=`-`=-`=-`=-`=-`=-`=-`=`-`=-`=`-=`-`=
+   DJ marc JiNX Releases:
+
+   Name                                         Year   Length
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   Trancemix Vol I                              1995    90:00
+   Hardtrance and Hardcore Vol I                1995    90:00
+   House and Acid Vol I                         1996    90:00
+   House and Acid Vol II                        1996    90:00
+
+
+                   To order contact me on bbs or by mail
+
+
+
+
+   lethal illusion - sub-section                                  releases
+   =`-`=`-`-`=-`-`=-`=`-`=`-`=-`=-`=`=`-`=-`=-`=-`=-`=-`=-`=`-`=-`=`-=`-`=
+
+   Name            Desciption
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   K`LI`001.RAR    Duke 3D Level: Nightmare on billerstreet
+
+
+
+
+
+   bbs-section                                              tHE tEMPLE bBS
+   =`-`=`-`-`=-`-`=-`=`-`=`-`=-`=-`=`=`-`=-`=-`=-`=-`=-`=-`=`-`=-`=`-=`-`=
+
+              ________ ________ ________  ________ ____    ________
+             !__    __!__    __!_      _!!_       !__  !  !__    __!
+          %tHE%/    \   / __)   /      \  /    \ _¡ /  ___  / __)%bBS%
+              /      \ /      \/        \/      \  /      \/      \
+              \______/ \______/\___/\___/\______/mJ\______/\______/
+               %49.821.2191038`mODEM%        %iSDN`49.821.2191036%
+
+       %stoned`brain`records`memberboard% %exp`dist% %air`online`support%
+           %bavarian`host`of% %comanet% %scenenet% %oanet% %8bitnet%
+                    %szenenet`2nd`hq% %KDS`world`headquater%
