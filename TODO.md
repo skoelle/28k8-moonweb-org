@@ -6,10 +6,6 @@ Stand: 15.08.2026 | Referenz: PLAN.md, SPEC.md, PRD.md
 
 ## OFFENE AUFGABEN
 
-### Kosmos Design - Outside SBR
-- [ ] `src/content/kosmos-design/outside-sbr.md` — Placeholder-Text in Zeile 12 bereinigen
-  (`"exact wording pending, PRD.md 12"`)
-
 ### ANSI-Art in Menüs
 - [x] BANNER_SKYLINE_SECTION — skyline.astro (blau)
 - [x] ANSI Gallery — BANNER_SKYLINE, BANNER_TEMPLE3, BANNER_INFOFILE, BANNER_MAINBASE, BANNER_LOGGED (in ansi-art.astro)
