@@ -31,53 +31,52 @@ Cloudflare Pages, connected directly to this repo. Build command
 
 ## 🔄 Pre-Build System
 
-Das Pre-Build-System lädt vor jedem Build externe Daten (JSON) und schreibt
-sie nach `src/data/`. Die JSON wird committed, sodass der Build nicht von
-externen Servern abhängt.
+The pre-build system loads external data (JSON) before each build and writes
+it to `src/data/`. The JSON is committed, so the build does not depend on
+external servers.
 
 ```bash
-./prebuild.sh          # alle Stages
-./prebuild.sh mods     # nur MOD-Metadaten
+./prebuild.sh          # all stages
+./prebuild.sh mods     # MOD metadata only
 ```
 
-**Wichtig:** `prebuild.sh` wird nur lokal ausgeführt, wenn sich externe Daten
-ändern. Das Ergebnis (JSON-Dateien in `src/data/`) wird ins Repo committed.
-In der CI/CD (`deploy.yml`) wird `npx astro build` direkt aufgerufen — das
-überspringt `prebuild.sh` bewusst, da die JSON-Daten bereits im Repo liegen.
+**Important:** `prebuild.sh` is only run locally when external data changes.
+The result (JSON files in `src/data/`) is committed to the repo.
+In CI/CD (`deploy.yml`), `npx astro build` is called directly — this
+intentionally skips `prebuild.sh` since the JSON data is already in the repo.
 
-Aktive Stages:
-| Stage | Script | Output | Beschreibung |
+Active stages:
+| Stage | Script | Output | Description |
 |---|---|---|---|
-| `mods` | `tools/fetch_mods.py` | `src/data/mods.json` | MOD-Metadaten von moonweb.org |
+| `mods` | `tools/fetch_mods.py` | `src/data/mods.json` | MOD metadata from moonweb.org |
 
-Neuen Stage hinzufügen:
-1. 🐍 `tools/fetch_<name>.py` erstellen (Output: `src/data/<name>.json`)
-2. 🔧 Case-Block in `prebuild.sh` ergänzen
-3. 🏗️ `npm run build` ruft automatisch `prebuild.sh` auf
+Add a new stage:
+1. 🐍 Create `tools/fetch_<name>.py` (output: `src/data/<name>.json`)
+2. 🔧 Add case block in `prebuild.sh`
+3. 🏗️ `npm run build` automatically runs `prebuild.sh`
 
-## 🎬 WelcomeBanner (Startseite)
+## 🎬 WelcomeBanner (Start Screen)
 
-Das "THE TEMPLE BBS"-Logo auf der Startseite wird als CP437-Text mit
-Typewriter-Animation dargestellt. Der Text kommt aus einer echten
-CP437-Datei und wird mit einem IBM-VGA-Webfont gerendert.
+The "THE TEMPLE BBS" logo on the start screen is rendered as CP437 text with
+a typewriter animation. The text comes from a real CP437 file and is rendered
+with an IBM VGA webfont.
 
-### 📁 Dateien
+### 📁 Files
 
-| Datei | Zweck |
+| File | Purpose |
 |---|---|
-| `source-assets/welcome.txt` | Original-Datei (CP437-kodiert) |
-| `source-assets/welcome-utf8.txt` | UTF-8-Version, wird von Astro eingelesen |
-| `src/components/WelcomeBanner.astro` | Komponente (Rendering + Animation) |
-| `public/fonts/Px437_IBM_VGA_8x16.woff2` | CP437-Webfont (6.6 KB) |
-| `public/fonts/Px437_IBM_VGA_8x16.ttf` | Font als Fallback |
-| `src/styles/global.css:2` | `@font-face`-Definition |
+| `source-assets/welcome.txt` | Original file (CP437 encoded) |
+| `source-assets/welcome-utf8.txt` | UTF-8 version, read by Astro |
+| `src/components/WelcomeBanner.astro` | Component (rendering + animation) |
+| `public/fonts/Px437_IBM_VGA_8x16.woff2` | CP437 webfont (6.6 KB) |
+| `public/fonts/Px437_IBM_VGA_8x16.ttf` | Font as fallback |
+| `src/styles/global.css:2` | `@font-face` definition |
 
-### 🤔 Warum zwei Textdateien?
+### 🤔 Why two text files?
 
-Node.js unterstützt `cp437` nicht in `TextDecoder`. Die Original-Datei
-wird daher per Python in UTF-8 konvertiert und die `.txt`-Datei mit
-abgespeichert. Bei Änderungen an `welcome.txt` muss die UTF-8-Version
-neu generiert werden:
+Node.js does not support `cp437` in `TextDecoder`. The original file
+is converted to UTF-8 via Python and the `.txt` file is saved alongside it.
+When `welcome.txt` is changed, the UTF-8 version must be regenerated:
 
 ```bash
 python3 -c "
@@ -86,27 +85,35 @@ with open('source-assets/welcome-utf8.txt','w',encoding='utf-8') as f: f.write(d
 "
 ```
 
-### ⏱️ Animation anpassen
+### ⏱️ Adjusting the animation
 
-In `src/components/WelcomeBanner.astro`, Zeile 24-26:
+In `src/components/WelcomeBanner.astro`, lines 24-26:
 
 ```javascript
-const BASE = 8;    // Basis-delay pro Zeichen (ms)
-const FAST = 4;    // Delay für Leerzeichen (ms)
+const BASE = 8;    // base delay per character (ms)
+const FAST = 4;    // delay for spaces (ms)
 const HARD_PAUSES: [number, number][] = [[34, 400], [98, 350]];
-//                                 [Zeichen-Position, Pause in ms]
+//                                 [character position, pause in ms]
 ```
 
-- **`BASE`/`FAST`** kleiner = schneller
-- **`HARD_PAUSES`** = 2 bewusste Pausen mitten in einer Zeile.
-  Position 34 ≈ Mitte der 1. Zeile, Position 98 ≈ Mitte der 2. Zeile.
-  Werte an Text anpassen wenn sich die Zeilenlängen ändern.
+- **`BASE`/`FAST`** smaller = faster
+- **`HARD_PAUSES`** = 2 deliberate pauses in the middle of a line.
+  Position 34 ≈ middle of line 1, position 98 ≈ middle of line 2.
+  Adjust values if line lengths change.
 
 ### 🔤 Font
 
-`Px437 IBM VGA 8x16` von int10h.org (Oldschool PC Font Pack v2.2,
-CC BY-SA 4.0). Enthält 288 Glyphs inkl. aller CP437-Block-Zeichen
-(█, ▄, ▀, ▌, ▐, ░, ▒, ▓) und Box-Drawing-Zeichen.
+`Px437 IBM VGA 8x16` from int10h.org (Oldschool PC Font Pack v2.2,
+CC BY-SA 4.0). Contains 288 glyphs including all CP437 block characters
+(█, ▄, ▀, ▌, ▐, ░, ▒, ▓) and box-drawing characters.
 
-Der Font ist über `--font-ansi` in `global.css` verfügbar und wird
-auch von den ANSI-Art-Bannern (`ansiArt.ts`) genutzt.
+The font is available via `--font-ansi` in `global.css` and is also
+used by the ANSI art banners (`ansiArt.ts`).
+
+## 📜 License
+
+[![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+See [LICENSE](LICENSE) for the full text.
