@@ -6,7 +6,7 @@ import TerminalShell from '../../../components/TerminalShell';
 import StatusBar from '../../../components/StatusBar.astro';
 import NavBar from '../../../components/NavBar.astro';
 import AnsiArt from '../../../components/AnsiArt.astro';
-import { BANNER_SKYLINE } from '../../../lib/ansiArt';
+import { BANNER_SKYLINE_SECTION } from '../../../lib/ansiArt';
 import LetterFooter from '../../../components/LetterFooter.astro';
 import TextOverlay from '../../../components/TextOverlay.astro';
 import TextOverlayScript from '../../../components/TextOverlayScript.astro';
@@ -19,7 +19,7 @@ const intros = releases.filter((r) => r.data.title.toLowerCase().includes('intro
 ---
 <TerminalLayout title="SkyLINE Productions" description="SkyLINE Productions - tools, demos and utilities for the 486" accentClass="skyline-accent">
   <TerminalShell client:load>
-    <AnsiArt html={BANNER_SKYLINE} />
+    <AnsiArt html={BANNER_SKYLINE_SECTION} />
     <NavBar />
     <h1>SkyLINE Productions</h1>
     <p>Augsburg's first DemoGroup. Sterling (Stefan Kölle) and M.H. (Matthias Hebeisen) coding utilities, intros and games since 1993.</p>
