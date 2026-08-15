@@ -3,7 +3,7 @@
 :root {
   --bg:#000; --fg:#c0c0c0; --fg-bright:#fff;
   --red-dark:#8b0000; --red-bright:#ff2828; --red-shadow:#4a0000; --pink:#ff69b4; --yellow:#ffd23f; --grey:#969696;
-  --blue-dark:#00008b; --blue-bright:#55aaff; --blue-shadow:#000050; --cyan:#50e6e6;
+  --blue-dark:#00008b; --blue-bright:#55aaff; --blue-shadow:#000050; --cyan:#50e6e6; --green:#55ff55;
   --font-ansi:'Px437 IBM VGA 8x16','Perfect DOS VGA 437',monospace; --font-body:'IBM Plex Mono',ui-monospace,monospace; --terminal-width-ch:calc(84ch + 23px);
 }
 * { box-sizing: border-box; }
@@ -36,6 +36,10 @@ a { color: inherit; }
 @media (max-width:640px) { .tile-grid { grid-template-columns: 1fr; } }
 @media (max-width:640px) { .ansi-text { font-size: 9px; } }
 .welcome-modem { transform: scaleY(2); transform-origin: top center; line-height: 0.84; }
+.welcome-modem a { color: var(--fg); text-decoration: none; transition: color 0.15s; }
+.welcome-modem a:hover { color: var(--yellow); }
+.select-line-hint { color: var(--green); animation: hint-pulse 2s ease-in-out infinite; }
+@keyframes hint-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
 @media (max-width:640px) { .welcome-modem { font-size: 12px; } }
 @media (max-width:640px) { .ansi-text .c-main-red, .ansi-text .c-main-blue, .ansi-text .c-white, .ansi-text .c-pink, .ansi-text .c-cyan { font-weight: normal; } }
 .status-bar { border-top:1px solid var(--red-dark); margin-top:1rem; padding-top:0.5rem; font-size:0.85em; }
