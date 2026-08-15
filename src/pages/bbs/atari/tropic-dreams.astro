@@ -9,7 +9,7 @@ import { BANNER_ATARI } from '../../../lib/ansiArt';
 import LetterFooter from '../../../components/LetterFooter.astro';
 const releases = (await getCollection('tropicdreams')).sort((a, b) => (a.data.year ?? 0) - (b.data.year ?? 0));
 ---
-<TerminalLayout title="Tropic DREAMs" description="Atari ST games and tools, 1990-1992">
+<TerminalLayout title="Tropic DREAMs" description="Tropic DREAMs - Atari ST games, demos and tools from the early 1990s, distributed on tHE tEMPLE bBS.">
   <TerminalShell client:load>
     <AnsiArt html={BANNER_ATARI} />
     <NavBar />

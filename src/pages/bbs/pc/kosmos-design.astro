@@ -19,7 +19,7 @@ const tapes = allReleases.filter((r) => r.data.platform === 'Audio');
 const remaining = allReleases.filter((r) => !r.data.group.includes('Outside Productions') && !r.data.group.includes('Lethal Illusion') && r.data.platform !== 'Audio');
 const tools = remaining.filter((r) => r.data.platform === 'DOS');
 ---
-<TerminalLayout title="Kosmos Design [KDS]" description="Kosmos Design releases and outside productions">
+<TerminalLayout title="Kosmos Design [KDS]" description="Kosmos Design [KDS] - own releases and outside productions from the Augsburg demoscene, 1990s PC.">
   <TerminalShell client:load>
     <AnsiArt html={BANNER_KOSMOS} />
     <NavBar />

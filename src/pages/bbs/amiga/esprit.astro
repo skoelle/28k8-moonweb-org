@@ -9,7 +9,7 @@ import { BANNER_ESPRIT } from '../../../lib/ansiArt';
 import LetterFooter from '../../../components/LetterFooter.astro';
 const releases = await getCollection('esprit');
 ---
-<TerminalLayout title="ESPRIT Releases" description="Amiga DemoMaker releases and utility discs">
+<TerminalLayout title="ESPRIT Releases" description="ESPRIT releases - Amiga DemoMaker utilities, intro tools and creative software from the demoscene.">
   <TerminalShell client:load>
     <AnsiArt html={BANNER_ESPRIT} />
     <NavBar />
