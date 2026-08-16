@@ -7,7 +7,6 @@ export default function TerminalShell({ children }: { children?: React.ReactNode
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       const entry = findKeyEntry(e.key);
       if (!entry) return;
-      if (entry.href === 'back') { window.history.back(); return; }
       if (entry.href === 'disconnect') { resetConnected(); window.location.href = '/'; return; }
       window.location.href = entry.href;
     }

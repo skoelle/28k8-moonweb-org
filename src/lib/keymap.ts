@@ -1,6 +1,6 @@
 export type KeymapEntry = { key: string; href: string; label: string };
 export const GLOBAL_NAV_KEYS: KeymapEntry[] = [
-  { key: 'B', href: 'back', label: 'Back' },
+  { key: 'B', href: '/bbs/', label: 'Back to Main Menu' },
   { key: 'Q', href: 'disconnect', label: 'Disconnect' },
   { key: 'I', href: '/bbs/legal-notice', label: 'Legal Notice' },
 ];

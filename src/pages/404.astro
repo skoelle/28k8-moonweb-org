@@ -1,0 +1,33 @@
+---
+import TerminalLayout from '../layouts/TerminalLayout.astro';
+import StatusBar from '../components/StatusBar.astro';
+import LetterFooter from '../components/LetterFooter.astro';
+const W = 50;
+const hr = '\u2550'.repeat(W - 2);
+const sp = (n: number) => ' '.repeat(n);
+const pad = (textLen: number) => sp(W - 4 - textLen);
+const box = `<span class="c-main-red">\u2554${hr}\u2557
+\u2551${sp(W - 2)}\u2551
+\u2551  <span class="c-white">*** ERROR 404 ***</span>${pad(17)}\u2551
+\u2551${sp(W - 2)}\u2551
+\u2551  <span class="c-grey">Node not found in nodelist.</span>${pad(27)}\u2551
+\u2551  <span class="c-grey">The address you are trying to reach</span>${pad(35)}\u2551
+\u2551  <span class="c-grey">does not exist on this BBS.</span>${pad(27)}\u2551
+\u2551${sp(W - 2)}\u2551
+\u2551  <span class="c-cyan">Check the nodelist and try again.</span>${pad(33)}\u2551
+\u2551${sp(W - 2)}\u2551
+\u255A${hr}\u255D</span>`;
+---
+<TerminalLayout title="404 - Node not found" description="The requested BBS node does not exist.">
+  <div style="margin-top: 4rem; text-align: center;">
+    <pre class="ansi-text" style="display:inline-block; text-align:left;" set:html={box} />
+    <p style="margin-top: 2rem;">
+      <a href="/bbs/" style="border:1px solid var(--red-dark); padding:0.4rem 1rem; display:inline-block; text-decoration:none;">[B] Back to Main Menu</a>
+    </p>
+    <p style="color: var(--grey); font-size: 0.85em; margin-top: 1rem;">
+      Press <span class="c-main-red">B</span> to return to the main menu.
+    </p>
+  </div>
+  <LetterFooter />
+  <StatusBar />
+</TerminalLayout>
