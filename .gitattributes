@@ -1,0 +1,6 @@
+# Exclude vendored and generated files from GitHub language statistics
+public/js/libopenmpt.worklet.js linguist-vendored
+public/js/chiptune3.worklet.js linguist-vendored
+public/js/chiptune3.js linguist-vendored
+src/lib/ansiArt.ts linguist-generated
+src/data/* linguist-generated
