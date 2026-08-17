@@ -245,7 +245,7 @@ Content-Sprache in allen Feldern: Englisch (siehe 6.3).
 ## 9. Sections & Menüpunkte
 
 ### PC Section
-Hardware: Colani 486 DX-50 / DOS / VGA / Soundblaster AWE32
+Hardware: Colani 486 DX2-66 / DOS / VGA / Soundblaster AWE32
 
 | Menüpunkt | Key | Status | Ziel |
 |---|---|---|---|
@@ -329,7 +329,7 @@ Original-Assets werden direkt zum Download angeboten, gehostet auf `files.moonwe
 | <- Kachel-Kopf mit Dither-Gradient    || <- Kachel-Kopf mit Dither-Gradient    |
 | (siehe 6.1), Farbe dunkelrot->hellrot || (siehe 6.1), Farbe dunkelrot->hellrot |
 |                                       ||                                       |
-| Colani 486 DX-50 / DOS / VGA /       || 1040 STFM (1MB) / Mega 4 (4MB,       |
+| Colani 486 DX2-66 / DOS / VGA /       || 1040 STFM (1MB) / Mega 4 (4MB,       |
 | Soundblaster AWE32                   || 60MB HD)                              |
 |                                       ||                                       |
 | [P] PHOB!A                           || [D] Tropic DREAMs                     |
@@ -368,7 +368,7 @@ Original-Assets werden direkt zum Download angeboten, gehostet auf `files.moonwe
 
 +------------------------------+
 | PC SECTION                  |
-| Colani 486 DX-50 / DOS /    |
+| Colani 486 DX2-66 / DOS /    |
 | VGA / Soundblaster AWE32    |
 |                              |
 | [P] PHOB!A                  |
