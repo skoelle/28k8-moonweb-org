@@ -35,6 +35,7 @@ Stand: 15.08.2026 | Referenz: PLAN.md, SPEC.md, PRD.md
 - [x] IBM Plex Mono — per Google Fonts CDN eingebunden (15.08.2026)
 - [x] ANSI-Art Font-Size auf 20px + Content-Bereich +10px angepasst (15.08.2026)
 - [x] `bbs/cds.astro` → `bbs/fido/cds.astro` verschoben (15.08.2026)
+- [ ] IBM Plex Mono lokal hosten (Google Fonts herunterladen, @font-face in global.css, CDN-Link entfernen)
 
 ---
 
