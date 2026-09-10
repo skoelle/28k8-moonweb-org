@@ -1,0 +1,17 @@
+# Redirect trailing slashes to non-trailing slash URLs
+/bbs/ /bbs 301
+/bbs/pc/ /bbs/pc 301
+/bbs/pc/phobia/ /bbs/pc/phobia 301
+/bbs/pc/trancemission/ /bbs/pc/trancemission 301
+/bbs/pc/skyline/ /bbs/pc/skyline 301
+/bbs/pc/kosmos-design/ /bbs/pc/kosmos-design 301
+/bbs/atari/ /bbs/atari 301
+/bbs/atari/tropic-dreams/ /bbs/atari/tropic-dreams 301
+/bbs/amiga/ /bbs/amiga 301
+/bbs/amiga/esprit/ /bbs/amiga/esprit 301
+/bbs/amiga/mods/ /bbs/amiga/mods 301
+/bbs/fido/ /bbs/fido 301
+/bbs/fido/ansi-art/ /bbs/fido/ansi-art 301
+/bbs/fido/nodelist/ /bbs/fido/nodelist 301
+/bbs/fido/cds/ /bbs/fido/cds 301
+/bbs/legal-notice/ /bbs/legal-notice 301
