@@ -27,13 +27,14 @@ const intros = releases.filter((r) => r.data.title.toLowerCase().includes('intro
     <p>"We want to code real cool demos in asm."</p>
     <p>Source files: <TextOverlay title="skyline94.txt" content={skyline94} /> <TextOverlay title="skyline95.txt" content={skyline95} /> <TextOverlay title="FILES.BBS" content={skylineFilesBbs} /></p>
     <h2>Tools & Utilities</h2>
+    <p class="featured-tool"><a href="/bbs/pc/dosmenu/"><strong>DosMENU™ v2.0</strong></a> — The Best Boot-Config-Utility ever. Choose your autoexec.bat and config.sys commands at boot time, with built-in MOD player and saveable presets. (1994)</p>
     {tools.map((release) => (
       <div class="release-row">
         <div>
           <h3>{release.data.title}</h3>
           <p>{release.data.description}</p>
           <p>Year: {release.data.year ?? '19xx'} &nbsp; Platform: {release.data.platform}</p>
-          {release.data.download_url && <p><a href={release.data.download_url}>Download</a></p>}
+          {release.data.download_url && <p><a href={release.data.download_url}>Download</a>{release.data.title.toLowerCase().includes('dosmenu') && <> &nbsp;|&nbsp; <a href="/bbs/pc/dosmenu/">Details</a></>}</p>}
         </div>
         <pre class="diz-box">{release.data.file_id_diz}</pre>
       </div>
@@ -60,3 +61,17 @@ const intros = releases.filter((r) => r.data.title.toLowerCase().includes('intro
     { id: 'overlay-files-bbs', title: 'FILES.BBS', content: skylineFilesBbs },
   ]} />
 </TerminalLayout>
+
+<style>
+  .featured-tool {
+    border: 1px solid var(--cyan);
+    padding: 0.75rem;
+    margin: 0.5rem 0 1rem;
+  }
+  .featured-tool a {
+    color: var(--cyan);
+  }
+  .featured-tool strong {
+    color: var(--white);
+  }
+</style>

@@ -1,0 +1,124 @@
+---
+import { readFileSync } from 'node:fs';
+import TerminalLayout from '../../../layouts/TerminalLayout.astro';
+import TerminalShell from '../../../components/TerminalShell';
+import StatusBar from '../../../components/StatusBar.astro';
+import NavBar from '../../../components/NavBar.astro';
+import LetterFooter from '../../../components/LetterFooter.astro';
+import TextOverlay from '../../../components/TextOverlay.astro';
+import TextOverlayScript from '../../../components/TextOverlayScript.astro';
+import AnsiArt from '../../../components/AnsiArt.astro';
+import { BANNER_SKYLINE_SECTION } from '../../../lib/ansiArt';
+const dosmenuTxt = readFileSync('src/data/dosmenu.txt', 'utf-8');
+---
+<TerminalLayout title="DosMENU" description="DosMENU - The Best Boot-Config-Utility ever for DOS, created by SkyLINE Productions in 1994." accentClass="skyline-accent">
+  <TerminalShell client:load>
+    <AnsiArt html={BANNER_SKYLINE_SECTION} />
+    <NavBar />
+    <h1>DosMENU™ v2.0</h1>
+    <p class="subtitle">The Best Boot-Config-Utility ever</p>
+    <p>DosMENU is a boot configuration utility for DOS, created by Stefan of SkyLINE in 1994. It lets you choose which autoexec.bat and config.sys commands to load at boot time — with built-in MOD music player, picture display, and saveable presets.</p>
+    <p>Source file: <TextOverlay title="dosmenu.txt" content={dosmenuTxt} /></p>
+    
+    <h2>Features</h2>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <h3>Boot Selector</h3>
+        <p>Toggle autoexec.bat and config.sys commands on or off before booting. No more editing text files — just select what you need.</p>
+      </div>
+      <div class="feature-item">
+        <h3>MOD Music Player</h3>
+        <p>Plays tracker modules while you configure your boot setup. Supports PC Speaker, SoundBlaster, and D/A Converter output.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Picture Display</h3>
+        <p>Shows a PCX image on startup before the main menu appears. Configurable wait time.</p>
+      </div>
+      <div class="feature-item">
+        <h3>10 Saveable Presets</h3>
+        <p>Save your favorite configurations and load them with F1-F10. Never set up your boot config twice. (Registered version only)</p>
+      </div>
+    </div>
+
+    <h2>System Info</h2>
+    <pre class="info-box">DosMENU™ v2.0                  23-Sep-1994
+Platform: DOS                  Language: English
+Written in Turbo Pascal 6.0    1900 lines + some ASM
+Copyright (C) 1994 by Stefan of SkyLINE</pre>
+
+    <h2>Additional Utilities</h2>
+    <p>DosMENU ships with three add-on programs:</p>
+    <ul>
+      <li><strong>DM_RESET.EXE</strong> — Fast Reset: Reboots your system directly from DOS without waiting for BIOS memory tests.</li>
+      <li><strong>DM_SHOW.EXE</strong> — Configuration Viewer: Displays the current preset name loaded in memory.</li>
+      <li><strong>DM_ANSI.EXE</strong> — DosMENU Logo ANSI Viewer: Renders the DosMENU logo in colored ANSI art.</li>
+    </ul>
+
+    <h2>Download</h2>
+    <p><a href="https://www.moonweb.org/files/pc/SKYLINE/DOSMENU.ZIP" class="download-btn">[D]ownload DosMENU v2.0</a></p>
+
+    <p class="note">DosMENU, DosMENU-Logo and SkyLINE-Bench are trademarks of SkyLINE ShareWare-Service and SkyLINE ShareWare-Development.</p>
+
+    <NavBar />
+    <LetterFooter />
+    <StatusBar />
+  </TerminalShell>
+  <TextOverlayScript overlays={[
+    { id: 'overlay-dosmenu-txt', title: 'dosmenu.txt', content: dosmenuTxt },
+  ]} />
+</TerminalLayout>
+
+<style>
+  .subtitle {
+    color: var(--cyan);
+    font-style: italic;
+  }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  .feature-item {
+    border: 1px solid var(--red-dark);
+    padding: 0.75rem;
+  }
+  .feature-item h3 {
+    color: var(--cyan);
+    margin: 0 0 0.5rem 0;
+  }
+  .feature-item p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+  .info-box {
+    border: 1px solid var(--red-dark);
+    padding: 0.5rem;
+  }
+  .download-btn {
+    display: inline-block;
+    border: 1px solid var(--cyan);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--cyan);
+  }
+  .download-btn:hover {
+    background: var(--cyan);
+    color: var(--bg);
+  }
+  .note {
+    color: var(--grey);
+    font-size: 0.85em;
+    margin-top: 2rem;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  li {
+    margin-bottom: 0.5rem;
+  }
+  li strong {
+    color: var(--cyan);
+  }
+</style>
