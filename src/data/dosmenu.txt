@@ -1,0 +1,513 @@
+
+
+
+      ┌──────╖ ┌──────╖ ┌─────╖ ┌───────╖ ┌─────╖ ┌───╖  ┌─╖ ┌─╖ ┌─╖ (TM)
+      ╘╕ ╔═╕ ║ │ ╔══╕ ║ │ ╔═══╝ │ ╔╕ ╔╕ ║ │ ╔═══╝ │   ╙╖ │ ║ │ ║ │ ║
+       │ ║ │ ║ │ ║  │ ║ │ ╙───╖ │ ║│ ║│ ║ │ ╙─╖   │ ╠╕ ╙╖│ ║ │ ║ │ ║
+       │ ║ │ ║ │ ║  │ ║ ╘═══╕ ║ │ ║╘═╝│ ║ │ ╔═╝   │ ║╘╕ ╙┤ ║ │ ║ │ ║
+      ┌┘ ╙─┘ ║ │ ╙──┘ ║ ┌───┘ ║ │ ║   │ ║ │ ╙───╖ │ ║ ╘╕   ║ │ ╙─┘ ║
+      ╘══════╝ ╘══════╝ ╘═════╝ ╘═╝   ╘═╝ ╘═════╝ ╘═╝  ╘═══╝ ╘═════╝
+       T h e   B e s t   B o o t - C o n f i g - U t i l i t y   e v e r
+      ───────────────────────────────────────────────────────────────────
+                           Version 2.0   23-Sep-1994
+                   Copyright (C) 1994 by Stefan of SkyLINE
+                            - All rights reserved -
+
+
+     DosMENU(TM), DosMENU-Logo(TM) and SkyLINE-Bench(TM) are trademarks of
+          SkyLINE ShareWare-Service and SkyLINE ShareWare-Development.
+              Windows(TM) is a trademark of Microsoft Corporation.
+          Norton Commander(TM) is a trademark of Symantec Corporation.
+
+
+
+
+
+                     T a b l e   o f   C o n t e n t s
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+           1. General information
+              a) Why using DosMENU(TM) and not an other BootSelector
+              b) ShareWareNotice
+              c) What are the improvements of the registered version
+              d) About SkyLINE
+              e) DosMENU(TM) Credits
+           2. First Steps of DosMENU(TM)
+              a) Installation
+              b) Checking the files
+           3. Usage
+              a) The Mainscreen
+                 - Basic Controls
+                 - Enhanced functions
+              b) DosMENU(TM) Keys
+              c) Configuration Menu
+           4. DosMENU(TM) add-on programs
+              a) The DosMENU(TM) Fast Reset
+              b) The DosMENU(TM) Configuration Viewer
+              c) The DosMENU-Logo(TM) Ansi-Viewer
+           5. Uninstallation
+           6. Frequently asked questions
+           7. Revision History
+
+
+
+
+
+
+
+1. General information
+~~~~~~~~~~~~~~~~~~~~~~
+   a) Why using DosMENU(TM) and not an other BootSelector
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   DosMENU(TM) provides you with the abilities of no other BootSelector.
+   If you experience the functions of DosMENU(TM) then you won't ever
+   use any other BootSelector than mine. Few improvements in contrast
+   to other Selectors: Choosing while booting, MODPlayer, Picture
+   Display, 10 Saveable Presets (Full Version only) and a friendly User-
+   interface. Test DosMENU(TM) now and enjoy the great utility. :-)
+
+
+   b) ShareWareNotice
+   ~~~~~~~~~~~~~~~~~~
+   This program is ShareWare, this means: If you use this program
+   regularly you have to register the program as soon as possible
+   or you break the rights of the author. To order the registered
+   version use ORDER.TXT in your directory or if it's missing write
+   to SkyLINE at : Stefan Koelle
+                   Laugingerstr. 2
+                   86154 Augsburg
+                   Germany
+   or simply dial: +49-821-2182986
+
+
+   c) What are the improvements of the registered version
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   As allready sayed in the upper passage, the registered version
+   also supports saveable Presets, where you can save your favoured
+   setup to select them at a later time without setting it up all the
+   time you need it. You also be informed when a new version is ready
+   and you get a free update. Please help the ShareWareConcept and
+   register DosMENU(TM) now.
+
+
+   d) About SkyLINE
+   ~~~~~~~~~~~~~~~~
+   SkyLINE is a group of people who want to make PC-life easier. :-)
+   To get more information about SkyLINE and their products read
+   SKYLINE.TXT in your directory. If there is now SKYLINE.TXT try
+   to get or download another SkyLINE product, where SKYLINE.TXT
+   is usually in.
+
+
+   e) DosMENU(TM) Credits
+   ~~~~~~~~~~~~~~~~~~~~~~
+
+        Idea, Code, Documentation, Raytracing Picture and Soundmodule
+
+                                     by
+
+                             Stefan of SkyLINE
+
+       50k source written in Turbo Pascal 6.0 / 1900 Lines (some asm)
+
+     Many thanx to Matthias Hebeisen (M.H/SkyLINE) for his Beta-Testing,
+     Christijan Majic (S.S.A) for refering me to the BootRoutine
+     and to Mark J Cox for his Mod-Obj.
+
+
+
+
+2. First Steps of DosMENU(TM)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   a) Installation
+   ~~~~~~~~~~~~~~~
+      The Installation of DosMENU(TM) is very easy. Use INSTALL.EXE
+      on your Install-Disks. Now follow the instructions on the screen.
+      Please only distribute the Installationdisks, because the
+      installprogram sets the DosMENU(TM)-Enviroments after the Hardware-
+      and Softwareconfiguration.
+
+
+   b) Checking the files
+   ~~~~~~~~~~~~~~~~~~~~~
+      DosMENU(TM) Main Directory:
+
+      autoexec.bat       37  AutoExec while booting
+      bench   .dat     4104  Used by DosMENU(TM)
+      bench   .ovl     4104    "              "
+      config  .sys       13  Config.sys while booting
+      dm_ansi .exe     3555  DosMENU-Logo(TM) Ansi-Viewer
+      dm_boot .exe     5243  Used by DosMENU(TM)
+      dm_reset.exe     3049  DosMENU(TM) Fast Reset
+      dm_show .exe     4312 *DosMENU(TM) Configuration Viewer
+      dosmenu .exe    30353  DosMENU(TM) Main program
+      dosmenu .mod    44704  DosMENU(TM) Demo Module
+      dosmenu .pcx    55376  DosMENU(TM) Demo Picture
+      dosmenu .txt    22500  DosMENU(TM) Manual
+      file_id .diz      560  DosMENU(TM) Quick Describtion
+      order.txt        2422  SkyLINE OrderForm
+      skyline.exe      4080  SkyLINE ANSI Picture
+      skyline.txt     12678  SkyLINE InfoText
+      uninstal.dat     7528  Used by DosMENU(TM) Uninstaller
+      uninstal.exe     5667  DosMENU(TM) Uninstaller
+
+
+      DosMENU(TM) Data Directory:
+
+      aktsetup.           3 #Current Setup of DosMENU(TM) or 0 for modified
+      autoexec.bat      ???  Your AutoExec.Bat before installing
+      config  .sys      ???  Your Config.Sys before installing
+      dosmenu .cfg      ???  DosMENU(TM) Config-File
+      dosmenu .set      ???  Current DosMENU(TM) Setup
+      fnames  .         ??? *DosMENU(TM) saveable Presets Names
+      setup   .1        ??? *DosMENU(TM) saveable Presets
+      ............      ... * "                        "
+      setup   .9        ??? * "                        "
+      setup   .10       ??? * "                        "
+      system  .         ???  DosMENU(TM) Startup-Commands
+
+      * Only registered versions
+      # Useful for programmerinterface
+
+
+
+
+3. Usage
+~~~~~~~~
+   a) The Mainscreen
+   ~~~~~~~~~~~~~~~~~
+      - Basic Controls
+      ~~~~~~~~~~~~~~~~
+      First of all you should run DosMENU(TM) once to see the Mainscreen.
+      On this screen you see:
+
+      On the left  : - Copyright Notice
+                     - Time
+                     - Date
+                     - Picture Displayed at beginning
+                     - Module played at the time
+                     - DoubleSpace Status (see also 3b Key U)
+                     - Autoload program
+                     - Presetnames (F1-F10)
+
+      In the middle: autoexec.bat commands
+      On the right : config.sys commands
+
+      The highlighted commands in the middle and right window are copied
+      into an autoexec.bat or config.sys while booting. This way you
+      can boot your system as you want at the first boot. In the
+      registered version you have also the ability to save your favoured
+      configurtions. A good argument to register now. After setting your
+      configuration for the startup press [ESC] and you can work with
+      your configuration. The next boot DosMENU(TM) automatically starts
+      up again.
+
+
+      - Enhanced functions
+      ~~~~~~~~~~~~~~~~~~~~
+      I included also some enhanced functions, because my friend
+      M.H/SkyLINE over and over again came with new ideas. So I
+      included the time and date wishes and so on. I also wanted
+      to configure the whole program from the program itself.
+      You can enter new commands while booting. Read 3b for more
+      Info about the edit commands. The MODplayer is from Mark
+      J Cox. Sorry I don't asked you to use it, but I found it on
+      a CD and used it. The PCX-Routine is from S.S.A, but not
+      written by him, only swaped sources.
+
+
+   b) DosMENU(TM) Keys
+   ~~~~~~~~~~~~~~~~~~~
+   ═════════════════════════╤═══════════════════════════════════════════
+   Keys                     │ Describtion
+   ═════════════════════════╪═══════════════════════════════════════════
+   Insert, Space            │ Enable or disable a command for the
+                            │ autoexec.bat or config.sys
+                            │
+   Return                   │ Show the command to the current
+                            │ Describtion.
+                            │
+   Cursor-Keys, Pos1, End   │ Move the bar in all directions
+                            │
+   Tabulator                │ Swap Window
+                            │
+   ESC                      │ Begin booting
+                            │
+   X                        │ Exit without creating a autoexec.bat
+                            │ and config.sys for the next boot
+   ─────────────────────────┼───────────────────────────────────────────
+   F1-F10                   │ Load a Preset from disk
+                            │ (only registered version)
+                            │
+   S                        │ Save the choosen setup to disk
+                            │ (only registered version)
+                            │
+   P                        │ Delete a Preset
+   ─────────────────────────┼───────────────────────────────────────────
+   N                        │ Enter new Command and Describtion
+                            │ The Command is the path and filename
+                            │ The Describtion is the text displayed
+                            │ in the middle or right window.
+                            │
+   E                        │ Edit a existing Command or Describtion
+                            │
+   O                        │ Change order of the commands
+                            │ This is very neccessary, because
+                            │ the first command should be HIMEM.SYS
+                            │ and the next EMM386. If you load them in
+                            │ the other direction they won't work.
+                            │
+   K                        │ Copy a Command and Describtion
+                            │
+   D                        │ Delete a Command and Describtion
+   ─────────────────────────┼───────────────────────────────────────────
+   A                        │ Edit AutoLoad-Program
+                            │ The AutoLoad-Program is the program loaded
+                            │ directly after the autoexec.bat
+                            │ (e.g. Windows(TM) of Norton Commander(TM)
+                            │
+   Y                        │ Disable AutoLoad-Program
+                            │ for no program loaded after startup
+                            │
+   T                        │ Disable or enable MODplay
+                            │
+   M                        │ Play next Module when a wildcard was
+                            │ entered at the configmenu
+                            │
+   U                        │ Unload DolubleSpace
+                            │ A very useful Command in DosMENU(TM).
+                            │ It unloads the driver for DoubleSpace
+                            │ drives. Notice that DBLSPACE.BIN
+                            │ must not have set the attributes
+                            │ Write only and System. Use it if you
+                            │ need more memory for some games.
+                            │ It only works if drive C is the hostdrive.
+   ─────────────────────────┼───────────────────────────────────────────
+   C                        │ Invokes the Configmenu (look also 3c)
+                            │
+   I                        │ Credits and How to contact
+                            │
+   H                        │ Helpscreen like this
+   ═════════════════════════╧═══════════════════════════════════════════
+
+
+   c) Configuration Menu
+   ~~~~~~~~~~~~~~~~~~~~~
+   ════════════════╤════════════════╤═══════════════════════════════════
+   Menuitem        │Possible Entries│ Describtion
+   ════════════════╪════════════════╪═══════════════════════════════════
+   Start-Typ       │ Cont with key  │ This Option selects the way how
+                   │ Wait with key  │ DosMENU(TM) is loaded. Either
+                   │                │ it will start always exept if you
+                   │                │ press the startup key(s) or it
+                   │                │ will only start if you press the
+                   │                │ startup key(s).
+   ────────────────┼────────────────┼───────────────────────────────────
+   Start-Key       │ RSHIFT+        │ Select the Keys for Start-Typ
+                   │ LSHIFT+        │ Use keys 1-4 to activate or
+                   │ STRG+          │ disactivate the keys and
+                   │ ALT            │ [ESC] to end setting the keys.
+   ────────────────┼────────────────┼───────────────────────────────────
+   Picture-Showing │ Enabled        │ Switch between showing a picture
+                   │ Disabled       │ at the beginning or not.
+   ────────────────┼────────────────┼───────────────────────────────────
+   Picture-File    │ *.PCX          │ The path to the picture(s).
+   ────────────────┼────────────────┼───────────────────────────────────
+   Picture-Wait    │ 0-9            │ How long the picture is displayed
+                   │                │ until the DosMENU(TM)-Mainscreen
+                   │                │ appears.
+   ────────────────┼────────────────┼───────────────────────────────────
+   Start-Seconds   │ 0-9            │ How long DosMENU(TM) should wait
+                   │                │ until it continues to boot current
+                   │                │ configuration.
+   ────────────────┼────────────────┼───────────────────────────────────
+   Sound-Playing   │ Enabled        │ Selects if a Module is playing
+                   │ Disabled       │ while DosMENU(TM) is loaded.
+   ────────────────┼────────────────┼───────────────────────────────────
+   Sound-File      │ *.MOD          │ Path to the MOD-Files.
+   ────────────────┼────────────────┼───────────────────────────────────
+   Sound-Driver    │ PC Speaker     │ The Outputsource. Some new
+                   │ D/A Converter  │ Soundblasters need drivers to work,
+                   │ SoundBlaster   │ so they don't work while booting.
+                   │ Disney Sound   │ If you edit dosmenu.cfg and change
+                   │ (not correct)  │ to a unexisted number then
+                   │                │ (not correct) is the entry.
+   ────────────────┼────────────────┼───────────────────────────────────
+   Sound-Frequence │ 0-20000Hz      │ Output-Frequence. Don't set it too
+                   │                │ high, if you have a too slow
+                   │                │ computer.
+   ────────────────┼────────────────┼───────────────────────────────────
+   PassWord        │ Enabled        │ Activates the Password feature.
+                   │ Disabled       │ To disable you have to enter the
+                   │                │ old password, so don't forget it
+                   │                │ or you can never boot again.
+   ────────────────┼────────────────┼───────────────────────────────────
+   Colours         │ Look at screen │ Invokes the SkyLINE-Bench(TM)
+                   │                │ Colourchangebox. Here you can
+                   │                │ change the DosMENU(TM)-Colours.
+   ────────────────┼────────────────┼───────────────────────────────────
+   Exit            │                │ Exits Configmenu
+   ════════════════╧════════════════╧═══════════════════════════════════
+
+
+
+
+4. DosMENU(TM) add-on programs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   a) The DosMENU(TM) Fast Reset (DM_RESET.EXE)
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Fast Reset is a little utility which uses the same bootroutine
+      as DosMENU(TM). On most systems it won't work while working,
+      although it works while booting, but on my machine it works
+      always if EMM386 is installed. Check it on your system and
+      when it hangs don't use it anymore. :-(
+
+
+   b) The DosMENU(TM) Configuration Viewer (DM_SHOW.EXE)
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Configuration Viewer shows you the current saveable Preset Name,
+      nothing less and nothing more.
+
+
+   c) The DosMENU-Logo(TM) Ansi-Viewer (DM_ANSI.EXE)
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      DosMENU-Logo(TM) Ansi-Viewer shows you the logo on the top
+      of this document in a coloured version. Thats all.
+
+
+
+
+5. Uninstallation
+~~~~~~~~~~~~~~~~~
+   Uninstallation is much easier than installation, so be sure
+   if you really want to uninstall DosMENU(TM). We advise you not
+   to uninstall it, because you won't found a better BootSelector. :-)
+   Nevertheless if you want to uninstall run UNSTALL.EXE and
+   follow the instructions. To install it again do it the same as
+   the first time.
+
+
+
+
+6. Frequently asked questions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Q: DosMENU(TM) doesn't continue when I exit. Why?
+   A: You must have no other programs staying in Memory before DosMENU(TM).
+      I know a guy who has an Yankee Doodle Virus in his System and
+      DM locked. I cleaned the machine and now DM is running as before.
+
+
+
+
+7. Revision History
+~~~~~~~~~~~~~~~~~~~
+   I try to write something like a revision. First of all I must
+   tell you that I began to write DosMENU(TM) in summer 1993. If your
+   good at maths you will see that it was developed in over a year.
+   First I made a very loosy program and I don't liked it. So I began
+   again from nothing. I developed a new User-Interface called
+   SkyLINE-Bench(TM), which was first used in SkyLINE Shell. After some
+   improvements to the interface DosMENU(TM) looked really good. So now
+   some infos about the making:
+
+   V0.001ß    * First Beta non-public release
+
+   V0.002ß    + Auto-Continue after 5 Seconds
+
+   V0.010ß    + Little help
+              + View Command with [RETURN]
+              + MOD-Player
+              + Configfile
+              + Saveable-Preset (registered version only)
+              + PCXview
+
+   V0.015ß    + Different AutoLoads for all Presets
+
+   V0.020ß    + DEFAULTS inserted in the Configfile
+              - Some bugs killed in Configfile
+
+   V0.025ß    + Delete a Preset
+              + SkyLINE-Bench(TM) Readline-Function improved
+
+   V0.030ß    + Random MODplay and PCXview
+
+   V0.051ß    + Password
+              + Startup-Keys
+
+   V0.07      * First public version
+
+   V0.1       + MOD-File and PCX-File Display on Mainscreen
+
+   V0.2       + Choosen Setup is displayed
+
+   V0.3       + MODplay can be turned off
+              + DMCONFIG Variable for choosen Preset
+
+   V0.4       + Time and Date Display on Mainscreen
+
+   V0.5       + Selected commands displayed with '»'
+
+   V0.6       * Program translated in english
+
+   V0.7       + Doublespace unloader
+              + DosMENU(TM) Show included (registered version only)
+
+   V0.8       + MODs to play can be changed in program
+              - Bug in DMCONFIG variable
+              - and some minor bugs I don't remember
+
+   V0.9       * It can be installed in any directory now
+              + Higher keyrepeat
+              + Also configure from DOS
+
+   V1.0       + Insert Commands and describtions
+              + Edit Commands and describtions
+              + Change order of Commands
+              + Delete Commands and describtions
+              + SkyLINE-Bench(TM) Palette Change created
+              * Choosen Setup Display improved
+              - Some minor bugs removed
+
+   V1.1       + Autoload disable
+              + 60 Commands for autoexec.bat and also for config.sys
+              + Commands now 250 chars instead of 74 before
+              - Autoload-Bug removed
+              - and again some minor bugs
+
+   V1.2       - and again and over again some minor bugs
+
+   V1.3       - Configfile Editor included
+
+   V1.4       * Fully tested version
+
+   V2.0       * Some texts changed and made ready for sale
+
+   V2.0r      * The registered version of V2.0
+              + Saveable-Presets
+              + BootChoice from M.H/SkyLINE included
+              - Now Shareware Notice any longer
+
+
+
+
+[End of Document]
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+            ──  ────────────────────────────────────────────────  ──
+           │                                                        │
+                                 ██┐     ████┐██████┐ ██┐ ███████┐
+           │ ┌┬──┐ ┬┬ ┌─ ┬  ┬┬   ██│     └██┌┘██┌─██│ ██│ ██┌────┘  │
+           │ └┴─┬┐ │├─┴┐ └──┤│   ██│      ██│ ██│ ██│ ██│ █████┐    │
+           │ └──┴┘ ┴┴  ┴ └──┴┘   ██│      ██│ ██│ ██│ ██│ ██┌──┘    │
+                                 ██████┐ ████┐██│ ██████│ ███████┐
+           │                     └─────┘ └───┘└─┘ └─────┘ └──────┘  │
+            ──  ────────────────────────────────────────────────  ──
+           │ This File passed through the SkyLINE ShareWare-Service │
+            ──  ─────────────────────────────────  ──   ──  ────  ──
+           │ To contact us write to: Stefan Kölle     │             │
+                                     Laugingerstr.10    ANSI by
+           │                         86154 Augsburg   │ Stefan of │
+                                     Germany            SkyLINE '94
+           │       Voice Hotline at: +49-821-2182986   │             │
+            ──  ─────────────────────────────────  ──   ──  ────  ──
