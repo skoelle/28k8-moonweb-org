@@ -100,7 +100,7 @@
 | `/bbs/amiga/mods` | MOD Files | Echte MODs von moonweb.org, WASM-Player (chiptune3) |
 | `/bbs/fido/ansi-art` | BBS ANSI Art | Gallery mit 8 Filler-Patterns |
 | `/bbs/fido/nodelist` | Fidonets & Nodelists | 9 Net-Boxen transkribiert |
-| `/bbs/legal-notice` | Legal Notice | Pflichtangaben hinterlegt, Link zu hub.moonweb.org/impressum |
+| `/bbs/legal-notice` | Legal Notice | Pflichtangaben hinterlegt, Link zu www.moonweb.org/impressum |
 
 ## Keyboard-Shortcuts (keymap.ts)
 
