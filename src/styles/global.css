@@ -85,7 +85,7 @@ a { color: inherit; }
 .mod-col-size { color:var(--grey); width:5rem; text-align:right; }
 .mod-btn-inline { background:none; border:none; color:var(--fg); font-family:var(--font-ansi); cursor:pointer; padding:0; font-size:inherit; }
 .mod-btn-inline:hover { color:var(--red-bright); }
-.subtitle { text-align:center; color:var(--fg-bright); font-weight:bold; margin:1rem 0; font-family:var(--font-body); }
+.subtitle { text-align:center; color:var(--fg-bright); font-weight:bold; margin:1rem 0; font-family:var(--font-body); font-size: inherit; }
 .esprit-thumb { display:flex; align-items:center; justify-content:center; min-height:120px; }
 .esprit-thumb img { max-width:100%; height:auto; display:block; }
 .modal-overlay { position:fixed; inset:0; z-index:1000; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center; }
